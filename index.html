@@ -1,0 +1,316 @@
+<!doctype html>
+<!--
+Hello visitor!
+Why don't you check the source code of this site on GitHub?
+I used several great tools like Yeoman, Bower and Grunt.
+Hope you mew it ♥
+
+           M.                                         .:M
+           MMMM.                                   .:MMMM
+           MMMMMMMM                             .:MMMMMMM
+           :MMHHHMMMMHMM.  .:MMMMMMMMM:.      .:MMHHMHMM:
+            :MMHHIIIHMMMM.:MMHHHHIIIHHMMMM. .:MMHIHIIHHM:
+             MMMHIIIIHHMMMIIHHMHHIIIIIHHMMMMMMHHHIIIIHHM:
+             :MMHIIIIIHMMMMMMMHHIIIIIIHHHMMMMMHHII:::IHM.
+              MH:I:::IHHMMMMMHHII:::IIHHMMMHHHMMM:I:IHMM
+              :MHI:HHIHMMHHIIHII::.::IIHMMHHIHHMMM::HMM:
+               MI::HHMMIIM:IIHII::..::HM:MHHII:::IHHMM:
+               MMMHII::..:::IHMMHHHMHHMMI:::...::IHM:
+               :MHHI::....::::HMMMMMMHHI::.. ..:::HM:
+                :MI:.:MH:.....:HMMMMHHMIHMMHHI:HH.:M
+                M:.I..MHHHHHMMMIHMMMMHMMHHHHHMMH:.:M.
+                M:.H..H  I:HM:MHMHI:IM:I:MM::  MMM:M:
+                :M:HM:.M I:MHMIIMMIIHM I:MM::.:MMI:M.
+                'M::MM:IMH:MMII MMHIMHI :M::IIHMM:MM
+                 MH:HMMHIHMMMMMMHMMIMHIIHHHHIMMHHMM
+                  MI:MMMMHI:::::IMM:MHI:::IMMMMHIM
+                  :IMHIHMMMMMM:MMMMMHHHHMMMHI:M
+                    HI:IMIHMMMM:MMMMMMHHHMI:.:M      .....
+        ............M::..:HMMMMIMHIIHMMMMHII:M:::''''
+            ....:::MHI:.:HMMMMMMMMHHHMHHI::M:::::::''''''
+           ''   ...:MHI:.::MMHHHMHMIHMMMMHH.MI..........
+              ''  ...MHI::.::MHHHHIHHMM:::IHM           '''
+                 '  IMH.::..::HMMHMMMH::..:HM:
+                   :M:.H.IHMIIII::IIMHMMM:H.MH
+                    IMMMH:HI:MMIMI:IHI:HIMIHM:
+                  .MMI:.HIHMIMI:IHIHMMHIHI:MIM.
+                 .MHI:::HHIIIIIHHI:IIII::::M:IM.
+                .MMHII:::IHIII::::::IIIIIIHMHIIM
+                MHHHI::.:IHHII:::.:::IIIIHMHIIHM:
+               MHHHII::..::MII::.. ..:IIIHHHII:IM.
+              .MHHII::....:MHII::.  .:IHHHI::IIHMM.
+              MMHHII::.....:IHMI:. ..:IHII::..:HHMM
+              MHHII:::......:IIHI...:IHI::.....::HM:
+             :MMH:::........ ...::..::....  ...:IHMM
+             IMHIII:::..........     .........::IHMM.
+             :MHIII::::......          .......::IHMM:
+              MHHIII::::...             ......::IHMM:
+              IMHHIII:::...             .....::IIHMM,
+              :MHHIII:::I:::...     ....:::I:::IIHMM
+               MMHHIII::IHI:::...........:::IIH:IHMM
+               :MMHHII:IIHHI::::::.....:::::IH:IHMIM
+                MMMHHII:IIHHI:::::::::::::IHI:IIHM:M.
+                MMMHHIII::IHHII:::::::::IHI:IIIHMM:M:
+                :MMHHHIII::IIIHHII::::IHI..IIIHHM:MHM
+                :MMMHHII:..:::IHHMMHHHHI:IIIIHHMM:MIM
+                .MMMMHHII::.:IHHMM:::IIIIIIHHHMM:MI.M
+              .MMMMHHII::.:IHHMM:::IIIIIIHHHMM:MI.M
+            .MMMMHHMHHII:::IHHMM:::IIIIIHHHHMM:MI.IM.
+           .MMHMMMHHHII::::IHHMM::I&&&IHHHHMM:MMH::IM.
+          .MMHHMHMHHII:::.::IHMM::IIIIHHHMMMM:MMH::IHM
+          :MHIIIHMMHHHII:::IIHMM::IIIHHMMMMM::MMMMHHHMM.
+          MMHI:IIHMMHHHI::::IHMM:IIIIHHHMMMM:MMMHI::IHMM.
+          MMH:::IHMMHHHHI:::IHMM:IIIHHHHMMMM:MMHI:.:IHHMM.
+          :MHI:::IHMHMHHII::IHMM:IIIHHHMMMMM:MHH::.::IHHM:
+          'MHHI::IHMMHMHHII:IHMM:IIHHHHMMMM:MMHI:...:IHHMM.
+           :MHII:IIHMHIHHIIIIHMM:IIHHHHMMMM:MHHI:...:IIHMM:
+           'MHIII:IHHMIHHHIIHHHMM:IHHHMMMMM:MHHI:..::IIHHM:
+            :MHHIIIHHMIIHHHIHHHMM:HHHHMMMMM:MHII::::IIIHHMM
+             MHHIIIIHMMIHHHIIHHMM:HHHHMMMM:MMHHIIHIIIIIHHMM.
+             'MHHIIIHHMIIHHIIIHMM:HHHMMMMH:MHHMHII:IIIHHHMM:
+              'MHHIIIHMMIHHHIHHMM:HHHMMMHH:MMIMMMHHHIIIHHMM:
+               'MHHIIHHMIHHHHHMMM:HHHMMMH:MIMMMMMMMMMMHIHHM:
+                'MHIIIHMMIHHHHHMM:HHHMMMH:IMMMMMHHIHHHMMHHM'
+                 :MHHIIHMIHHHHHMM:HHHMMMM:MMHMMHIHMHI:IHHHM
+                  MHHIIHM:HHHHHMM:HHHMMMM:MMMHIHHIHMM:HHIHM
+                   MHHIHM:IHHHHMM:HHHHMM:MMHMIIHMIMMMHMHIM:
+                   :MHIHMH:HHHHMM:HHHHMM:MMHIIHMIIHHMMHIHM:
+                    MMHHMH:HHHHMM:HHHHMM:MHHIHMMIIIMMMIIHM'
+                    'MMMMH:HHHHMM:HHHMM:MHHHIMMHIIII::IHM:
+                     :MMHM:HHHHMM:HHHMM:MHIHIMMHHIIIIIHM:
+                      MMMM:HHHHMM:HHHHM:MHHMIMMMHHHIHHM:MMMM.
+                      :MMM:IHHHMM:HHHMM:MHHMIIMMMHHMM:MMMMMMM:
+                      :MMM:IHHHM:HHHHMM:MMHHHIHHMMM:MMMMMMMMMM
+                       MHM:IHHHM:HHHMMM:MMHHHHIIIMMIIMMMMMMMMM
+                       MHM:HHHHM:HHHMMM:HMMHHHHHHHHHMMMMMMMMM:
+                    .MI:MM:MHHMM:MHMMHMHHMMMMHHHHHHHMMMMMMMMM'
+                   :IM:MMIM:M:MM:MH:MM:MH:MMMMMHHHHHMMMMMMMM'
+                   :IM:M:IM:M:HM:IMIHM:IMI:MMMMMHHHMMMMMM:'
+                    'M:MHM:HM:MN:HMIHM::M'   '::MMMMMMM:'
+                       'M'HMM'M''M''HM'I'
+-->
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#" dir="ltr" itemscope itemtype="http://schema.org/website">
+<head>
+  <meta charset="utf-8" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, target-densitydpi=device-dpi" />
+  <meta http-equiv="cleartype" content="on" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="content-script-type" content="text/javascript" />
+  <meta http-equiv="content-style-type" content="text/css" />
+  <meta http-equiv="content-language" content="us" />
+
+  <title>Maria Rabelero - Page Not Found</title>
+  <meta name="description" content="Welcome to Maria Rabelero site. I am an IT & full stack developer." />
+  <meta name="keywords" content="Maria Rabelero,melonangie,Angie Rabelero,Rabelero,web developer,php developer,drupal,symfony,cv,resume,web,html,html5,css,css3,php,mysql,developer,development,gnu,linux" />
+  <meta name="author" content="Maria Rabelero" />
+  <meta name="robots" content="index, follow, noodp" />
+  <meta name="revisit-after" content="14 days" />
+  <meta name="distribution" content="Global" />
+  <meta name="rating" content="General" />
+  <meta name="Resource-type" content="Website" />
+
+  <!-- Microdata metas -->
+  <meta itemprop="name" content="Maria Rabelero - IT & Web Development for Smart People" />
+  <meta itemprop="description" content="Welcome to Maria Rabelero site. I am an IT & full stack developer." />
+  <meta itemprop="image" content="https://pbs.twimg.com/profile_images/1205738050/IMG012_bigger.JPG" />
+
+  <!-- Twitter metas -->
+  <meta property="twitter:account_id" content="136731560" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@melonangie" />
+  <meta name="twitter:creator" content="@melonangie" />
+  <meta name="twitter:description" content="Welcome to Maria Rabelero site. I am an IT & full stack developer." />
+  <meta name="twitter:title" content="Maria Rabelero - IT & Web Development for Smart People" />
+  <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/1205738050/IMG012_bigger.JPG" />
+
+  <!-- Facebook metas -->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://mariarabelero.github.io" />
+  <meta property="og:title" content="Melonangie Site - IT & Web Development for Smart People" />
+  <meta property="og:description" content="Welcome to Maria Rabelero site. I am an IT & full stack developer." />
+  <meta property="og:site_name" content="Maria Rabelero - IT & Web Development for Smart People" />
+  <meta property="og:image" content="https://pbs.twimg.com/profile_images/1205738050/IMG012_bigger.JPG" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Google metas -->
+  <meta name="google-site-verification" content="googlebee6a98eb3ccb40d.html" />
+  <link rel="author" href="https://www.google.com/profiles/106004297750760100468" />
+  <link rel="publisher" href="https://plus.google.com/106004297750760100468" />
+  <link rel="alternate" type="application/rss+xml" title="Maria Rabelero" href="https://mariarabelero.github.io/" />
+
+  <!-- Other metas -->
+  <meta name="msvalidate.01" content="36F655E7FA1621D33A1B3B296B58A7D6" />
+  <meta property="fb:app_id" content="286181778509835"/>
+  <link rel="profile" href="https://gmpg.org/xfn/11" />
+  <link rel="shortlink" href="https://mariarabelero.github.io/" />
+  <link rel="canonical" href="https://mariarabelero.github.io/" />
+  <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/mariarabelero.github.io\/","name":"Maria Rabelero","potentialAction":{"@type":"SearchAction","target":"https:\/\/mariarabelero.github.io\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+  <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Person","url":"https:\/\/mariarabelero.github.io\/","sameAs":["https:\/\/www.youtube.com\/c\/melonangie"],"@id":"#person","name":"Maria Rabelero"}</script>
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="Melonangie Site">
+  <link rel="icon" type="image/png" href="apple-touch-icon.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="apple-touch-icon.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="apple-touch-icon.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="apple-touch-icon.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="apple-touch-icon.png" sizes="128x128" />
+  <link rel="shortcut icon" href="favicon.ico" sizes="16x16 32x32" />
+  <link rel="shortcut icon" href="apple-touch-icon.png" sizes="196x196" />
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Melonangie Site" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" sizes="57x57" />
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" sizes="114x114"/>
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" sizes="72x72" />
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" sizes="144x144" />
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" sizes="60x60" />
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" sizes="120x120" />
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" sizes="76x76" />
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" sizes="152x152" />
+  <link rel="shortcut icon" href="apple-touch-icon.png" />
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="apple-touch-icon.png" />
+  <meta name="msapplication-TileColor" content="#2F3BA2" />
+
+  <!-- Color the status bar on mobile devices -->
+  <meta name="theme-color" content="#2F3BA2" />
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5-els.js"></script>
+  <![endif]-->
+
+  <style>
+
+    * {
+      line-height: 2;
+      margin: 0;
+    }
+
+    html {
+      color: #888;
+      display: table;
+      font-family: sans-serif;
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 2em auto;
+    }
+
+    header {
+      color: #555;
+      font-size: 1.2em;
+      font-weight: 400;
+      position: absolute;
+      top: 1em;
+      left: 1.5em;
+    }
+
+    section {
+      text-align: center;
+    }
+
+    h1 {
+      color: #555;
+      font-size: 2em;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 280px;
+    }
+
+    .cat {
+      font-size: 5em;
+    }
+
+    @media only screen and (max-width: 280px) {
+
+      body, p {
+        width: 95%;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        margin: 0 0 0.3em;
+      }
+
+    }
+
+    @-webkit-keyframes spin {
+
+      0% {
+        -webkit-transform: rotateY(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotateY(-360deg);
+      }
+
+    }
+
+    @-moz-keyframes spin {
+
+      0% {
+        -moz-transform: rotateY(0deg);
+      }
+
+      100% {
+        -moz-transform: rotateY(-360deg);
+      }
+
+    }
+
+    #oops {
+      -webkit-transform-style: preserves-3d;
+      -moz-transform-style: preserves-3d;
+      -webkit-animation-name: spin;
+      -webkit-animation-duration: 5s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-delay: 2s;
+      -moz-animation-name: spin;
+      -moz-animation-duration: 5s;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-delay: 2s;
+    }
+
+    #oops:hover {
+      -webkit-animation-duration: 500ms;
+      -moz-animation-duration: 500ms;
+    }
+
+  </style>
+</head>
+<body>
+  <header>Maria Rabelero</header>
+  <section id="oops">
+    <div class="cat">~(=^–^)</div>
+    <h1>Page Not Found</h1>
+    <p>Sorry, but the page you were trying to view does not exist.</p>
+  </section>
+</body>
+</html>
+<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
