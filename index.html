@@ -213,8 +213,7 @@ Hope you mew it ♥
       font-style: normal;
     }
 
-/*
-    @font-face {
+    /* @font-face {
       font-family: 'a_little_sunshine';
       src:
         url('fonts/a_little_sunshine.eot'),
@@ -249,27 +248,31 @@ Hope you mew it ♥
       display: table;
       height: 100%;
       width: 100%;
-      /* background-color: #74c7d5;
-      background:
-        url('intro.svg') no-repeat center center fixed,
-        linear-gradient(45deg, rgba(195,237,244,1) 0%,rgba(116,199,213,1) 50%,rgba(187,227,237,1) 100%);*/
-      background-color: #fdfcf4;
-      background: url('bg.svg') no-repeat center center fixed;
-      background-size: cover, cover, 10% 10%;
     }
 
     body {
       display: table-cell;
       vertical-align: middle;
       margin: 2em auto;
-      /*color: #fff;*/
+      /*color: #fff;
+      font-family: 'laneup', sans-serif;
+      background-color: #74c7d5;
+      background:
+        url('intro.svg') no-repeat center center fixed,
+        linear-gradient(45deg, rgba(195,237,244,1) 0%,rgba(116,199,213,1) 50%,rgba(187,227,237,1) 100%);*/
       color: #DBAD51;
-      /*font-family: 'laneup', sans-serif;*/
       font-family: 'daniel', sans-serif;
       font-weight: 400;
+      background-color: #fdfcf4;
+      background: url('bg.svg') no-repeat center center fixed;
+      background-size: cover;
+      -webkit-transition: opacity 1s ease;
+      -moz-transition: opacity 1s ease;
+      transition: opacity 1s ease;
     }
 
     section {
+      margin-top: 1.5em;
       text-align: center;
       /* text-shadow:
         0 6px 1px rgba(0,0,0,.1),
@@ -279,14 +282,6 @@ Hope you mew it ♥
         0 5px 10px rgba(0,0,0,.25),
         0 10px 10px rgba(0,0,0,.2),
         0 20px 20px rgba(0,0,0,.15);*/
-      text-shadow:
-        0 6px 1px rgba(240,206,133,.1),
-        0 0 5px rgba(240,206,133,.1),
-        0 1px 3px rgba(240,206,133,.3),
-        0 3px 5px rgba(240,206,133,.2),
-        0 5px 10px rgba(240,206,133,.25),
-        0 10px 10px rgba(240,206,133,.2),
-        0 20px 20px rgba(240,206,133,.15);
     }
 
     header {
@@ -311,11 +306,11 @@ Hope you mew it ♥
 
     p {
       margin: 0 auto;
-      width: 280px;
+      width: 260px;
     }
 
     img {
-      width:80%;
+      width:100%;
     }
 
     .logo-container {
@@ -325,10 +320,10 @@ Hope you mew it ♥
     .cat {
       /*font-family: 'a_little_sunshine', sans-serif;
       font-size: 5em;*/
-      font-size: 2.8em;
+      font-size: 2.5em;
     }
 
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 330px) {
 
       body, p {
         width: 95%;
@@ -353,28 +348,47 @@ Hope you mew it ♥
 
     }
 
+    @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @-o-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
     @-webkit-keyframes spin {
-
-      0% {
-        -webkit-transform: rotateY(0deg);
-      }
-
-      100% {
-        -webkit-transform: rotateY(-360deg);
-      }
-
+      0% { -webkit-transform: rotateY(0deg);}
+      100% { -webkit-transform: rotateY(-360deg);}
     }
 
     @-moz-keyframes spin {
+      0% { -moz-transform: rotateY(0deg);}
+      100% { -moz-transform: rotateY(-360deg);}
+    }
 
-      0% {
-        -moz-transform: rotateY(0deg);
-      }
-
-      100% {
-        -moz-transform: rotateY(-360deg);
-      }
-
+    #mmm {
+      -webkit-animation: fadein 1s;
+      -moz-animation: fadein 1s;
+      -ms-animation: fadein 1s;
+      -o-animation: fadein 1s;
+      animation: fadein 1s;
     }
 
     #oops {
@@ -398,11 +412,11 @@ Hope you mew it ♥
 
   </style>
 </head>
-<body>
+<body id="mmm">
   <header>
     <h1>Maria Rabelero</h1>
     <div class = 'logo-container'>
-      <img class="cat logo" src="logo.svg" />
+      <img class="cat logo" src="apple-touch-icon.png" />
     </div>
   </header>
   <section id="oops">
@@ -412,7 +426,7 @@ Hope you mew it ♥
   </section>
 
   <!-- Noise generating function -->
-<!--   <script>
+  <!-- <script>
     function generateNoise(opacity) {
 
       if ( !!!document.createElement('canvas').getContext ) {
