@@ -1,9 +1,36 @@
-# [mariarabelero.github.io](https://mariarabelero.github.io/)
+# mariarabelerogithubio
 
-## Inspiration
+## Introduction
 
-mariarabelero.github.io is inspired by
-- [Mobile HTML5 Boilerplate](https://html5boilerplate.com/mobile/).
-- Yeoman's [generator-webapp](https://github.com/yeoman/generator-webapp).
-- [Beautiful Creatures](http://www.dafont.com/es/beautiful-creatures.font) Font.
-- [Full Page](https://github.com/alvarotrigo/fullPage.js) script.
+## Dependencies
+
+## Installation
+
+Install NPM-Modules via 
+
+```
+$ npm install
+# OR
+$ yarn
+```
+
+Then run
+
+```
+# Development initialization
+$ npm run init
+
+# Develop-Mode with file-watch
+$ npm run dev
+
+# Copy HTML-Assets and Images
+$ npm run uiimages && npm run htmlassets
+
+# Build for production
+$ npm run build
+
+# Copy Assets into Astrum Styleguide
+$ npm run assets
+```
+
+## Licence 
