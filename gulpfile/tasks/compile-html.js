@@ -20,7 +20,14 @@ const compilerHtmlTask = () => {
 
   // Set Base Locals
   const templateLocals = {
-    siteTitle: kc.template.globalTitle,
+    siteTitle: pkg.name,
+    author: pkg.author.name,
+    color: pkg.themeColor,
+    url: pkg.repository,
+    description: pkg.description,
+    twitterHendler: pkg.author.twitterID,
+    googleID: pkg.author.googleID,
+    avatar: pkg.author.avatar,
     cssName: pkg.cssFileName,
     assetsCss: kc.templatePath.css,
     assetsImg: kc.templatePath.contentimage,

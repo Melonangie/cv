@@ -1,14 +1,18 @@
 {
   "title": "SiteTitle",
-  "name": "mariarabelerogithubio",
-  "description": "Maria Rabelero&#39;s site. I&#39;m an IT &amp; full stack developer.",
-  "version": "0.0.1",
+  "name": "Maria Rabelero - IT &amp; Web Development for Smart People",
+  "description": "Hi! Welcome to Maria Rabelero's site. I&#39;m an IT &amp; full stack developer.",
+  "version": "0.0.2",
   "license": "MIT",
-  "repository": "https://...",
+  "repository": "https://github.com/mariarabelero/mariarabelero.github.io",
+  "themeColor": "#74c7d5",
   "author": {
     "name": "Maria Rabelero",
     "email": "maria.rabelero@gmail.com",
-    "url": "https://..."
+    "url": "https://maria-rabelero.com",
+    "twitterID": "@melonangie",
+    "googleID": "106004297750760100468",
+    "avatar": "https://avatars2.githubusercontent.com/u/1419851"
   },
   "engines": {
     "node": ">=6.0.0"

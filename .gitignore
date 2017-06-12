@@ -1,4 +1,4 @@
-.DS_Store
+# Ignore paths that contain user-generated content.
 *.sassc
 .sass-cache
 *.css.map
@@ -6,6 +6,33 @@ npm-debug.log
 package-lock.json
 /node_modules
 /src/bower
-/.idea
 /dist
 /doc
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# Auto generated files by IDEs #
+################################
+.idea/*
+/.idea
+*.un~
+/nbproject/*
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon
+Thumbs.db
+._*

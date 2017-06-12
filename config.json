@@ -39,7 +39,7 @@
       "destFilename": "critical.css"
   },
   "template": {
-    "globalTitle": "mariarabelerogithubio",
+    "globalTitle": "Maria Rabelero",
     "compiler": true
   },
   "browsersync": {
@@ -58,6 +58,9 @@
     },
     "fonts": [
       "src/fonts/**"
+    ],
+    "static": [
+      "static/**"
     ],
     "launch": [
       {"src": "favicons/**", "dest": "assets/img/system/"},

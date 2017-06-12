@@ -17,6 +17,7 @@ const buildTask = (cb) => {
       'version:bump',
     ],
     [
+      'copy:static',
       'copy:launch',
       'copy:fonts',
       'rebuild:js',
