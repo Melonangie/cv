@@ -39,7 +39,7 @@
       "destFilename": "critical.css"
   },
   "template": {
-    "globalTitle": "Maria Rabelero",
+    "globalTitle": "MariaRabelero",
     "compiler": true
   },
   "browsersync": {
@@ -50,10 +50,15 @@
   "files": {
     "jsCopy": [
       "node_modules/lazysizes/plugins/respimg/ls.respimg.js",
-      "node_modules/html5shiv/dist/html5shiv.js"
+      "node_modules/html5shiv/dist/html5shiv.js",
+      "node_modules/fullpage.js/vendors/jquery.easings.min.js",
+      "node_modules/fullpage.js/vendors/jquery.slimscroll.min.js",
+      "node_modules/fullpage.js/dist/jquery.fullpage.min.js",
+        "src/scripts/front.js"
     ],
     "jsCombine": {
-      "files": [],
+      "files": [
+      ],
       "filename": "scripts.js"
     },
     "fonts": [

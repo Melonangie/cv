@@ -2,7 +2,25 @@
 {% extends "templates/_layout.twig" %}
 
 {% block page %}
-  <h1>Hello World</h1>
-  <p>Whats Up</p>
-  <div id="app"></div>
+  <ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+    <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+    <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+  </ul>
+
+<div id="fullpage">
+    <div class="section">
+      <div class="slide" data-anchor="slide1"> Slide 1 </div>
+      <div class="slide" data-anchor="slide2"> Slide 2 </div>
+      <div class="slide" data-anchor="slide3"> Slide 3 </div>
+      <div class="slide" data-anchor="slide4"> Slide 4 </div>
+    </div>
+    <div class="section">
+        <h1>fullPage.js</h1>
+        <p>Continuous Scrolling Enabled</p>
+    </div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+  </div>
 {% endblock %}

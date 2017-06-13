@@ -1,11 +1,12 @@
 {
   "title": "SiteTitle",
-  "name": "Maria Rabelero - IT &amp; Web Development for Smart People",
+  "name": "mariarabelerogithubio",
+  "sitename": "Maria Rabelero - IT &amp; Web Development for Smart People",
   "description": "Hi! Welcome to Maria Rabelero's site. I&#39;m an IT &amp; full stack developer.",
-  "version": "0.0.2",
-  "license": "MIT",
   "repository": "https://github.com/mariarabelero/mariarabelero.github.io",
   "themeColor": "#74c7d5",
+  "version": "0.0.2",
+  "license": "MIT",
   "author": {
     "name": "Maria Rabelero",
     "email": "maria.rabelero@gmail.com",
@@ -70,6 +71,7 @@
     "gulp-favicons": "2.1.5",
     "gulp-header": "^1.8.8",
     "gulp-html-prettify": "^0.0.1",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^3.1.1",
     "gulp-include": "^2.3.1",

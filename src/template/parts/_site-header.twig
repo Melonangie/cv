@@ -74,38 +74,39 @@
 <!-- Add to homescreen for Chrome on Android -->
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="application-name" content="{{ siteTitle }}" />
-<link rel="icon" type="image/png" href="{{assetsImg}}logo-cat.svg" sizes="196x196" />
-<link rel="icon" type="image/png" href="{{assetsImg}}logo-cat.svg" sizes="96x96" />
-<link rel="icon" type="image/png" href="{{assetsImg}}logo-cat.svg" sizes="32x32" />
-<link rel="icon" type="image/png" href="{{assetsImg}}logo-cat.svg" sizes="16x16" />
-<link rel="icon" type="image/png" href="{{assetsImg}}logo-cat.svg" sizes="128x128" />
-<link rel="shortcut icon" href="{{assetsImg}}logo-cat.svg" sizes="16x16 32x32" />
-<link rel="shortcut icon" href="{{assetsImg}}logo-cat.svg" sizes="196x196" />
+<link rel="icon" type="image/png" href="{{ assetsImg }}logo-cat.svg" sizes="196x196" />
+<link rel="icon" type="image/png" href="{{ assetsImg }}logo-cat.svg" sizes="96x96" />
+<link rel="icon" type="image/png" href="{{ assetsImg }}logo-cat.svg" sizes="32x32" />
+<link rel="icon" type="image/png" href="{{ assetsImg }}logo-cat.svg" sizes="16x16" />
+<link rel="icon" type="image/png" href="{{ assetsImg }}logo-cat.svg" sizes="128x128" />
+<link rel="shortcut icon" href="{{ assetsImg }}logo-cat.png" sizes="16x16 32x32" />
+<link rel="shortcut icon" href="{{ assetsImg }}logo-cat.png" sizes="196x196" />
+<link rel="shortcut icon" href="{{assetsImg}}logo-cat.png" />
 
 <!-- Add to homescreen for Safari on iOS -->
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="apple-mobile-web-app-title" content="{{ siteTitle }}" />
-<link rel="apple-touch-icon" href="apple-touch-icon.png" />
-<link rel="apple-touch-icon-precomposed" href="{{assetsImg}}logo-cat.svg" sizes="57x57" />
-<link rel="apple-touch-icon-precomposed" href="{{assetsImg}}logo-cat.svg" sizes="60x60" />
-<link rel="apple-touch-icon-precomposed" href="{{assetsImg}}logo-cat.svg" sizes="72x72" />
-<link rel="apple-touch-icon-precomposed" href="{{assetsImg}}logo-cat.svg" sizes="76x76" />
-<link rel="apple-touch-icon-precomposed" href="{{assetsImg}}logo-cat.svg" sizes="114x114"/>
-<link rel="apple-touch-icon-precomposed" href="{{assetsImg}}logo-cat.svg" sizes="120x120" />
-<link rel="apple-touch-icon-precomposed" href="{{assetsImg}}logo-cat.svg" sizes="152x152" />
-<link rel="shortcut icon" href="{{assetsImg}}logo-cat.svg" />
-<!-- Place favicon.ico in the root directory -->
+<link rel="apple-touch-icon" href="{{ assetsImg }}logo-cat.png" />
+<link rel="apple-touch-icon-precomposed" href="{{ assetsImg }}logo-cat.svg" sizes="57x57" />
+<link rel="apple-touch-icon-precomposed" href="{{ assetsImg }}logo-cat.svg" sizes="60x60" />
+<link rel="apple-touch-icon-precomposed" href="{{ assetsImg }}logo-cat.svg" sizes="72x72" />
+<link rel="apple-touch-icon-precomposed" href="{{ assetsImg }}logo-cat.svg" sizes="76x76" />
+<link rel="apple-touch-icon-precomposed" href="{{ assetsImg }}logo-cat.svg" sizes="114x114"/>
+<link rel="apple-touch-icon-precomposed" href="{{ assetsImg }}logo-cat.svg" sizes="120x120" />
+<link rel="apple-touch-icon-precomposed" href="{{ assetsImg }}logo-cat.svg" sizes="152x152" />
 
-<!-- Tile icon for Win8 (144x144 + tile color) -->
-<meta name="msapplication-TileImage" content="{{assetsImg}}logo-cat.svg" />
+<!-- Tile icon for Win8 -->
+<meta name="msapplication-TileImage" content="{{ assetsImg }}logo-cat.svg" />
 <meta name="msapplication-TileColor" content="{{ color }}" />
 
 <!-- Color the status bar on mobile devices -->
 <meta name="theme-color" content="{{ color }}" />
 
 <!--[if lt IE 9]>
-<script src="{{assetsJs}}html5shiv.js"></script>
+  <script src="{{assetsJs}}html5shiv.js"></script>
 <![endif]-->
 
-<link rel="stylesheet" href="{{assetsCss}}style.css">
+<!-- CSS -->
+<link rel="stylesheet" href="{{ assetsCss }}style.css">
+<link rel="stylesheet" href="{{ assetsCss }}vendor/jquery-fullpage.css">
