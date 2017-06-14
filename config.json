@@ -57,8 +57,7 @@
         "src/scripts/front.js"
     ],
     "jsCombine": {
-      "files": [
-      ],
+      "files": [],
       "filename": "scripts.js"
     },
     "fonts": [

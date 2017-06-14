@@ -1,15 +1,15 @@
-<!-- Metassss -->
 <meta charset="utf-8"/>
-<title>{{ siteTitle }}</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, user-scalable=yes, target-densitydpi=device-dpi" />
 <meta name="HandheldFriendly" content="True" />
 <meta name="MobileOptimized" content="320" />
-<meta name="theme-color" content="{{ color }}" />
-<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, user-scalable=yes, target-densitydpi=device-dpi" />
 <meta http-equiv="cleartype" content="on" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="content-script-type" content="text/javascript" />
 <meta http-equiv="content-style-type" content="text/css" />
 <meta http-equiv="content-language" content="us" />
+
+<!-- Site Info metas -->
+<title>{{ siteTitle }}</title>
 <meta name="description" content="{{ description }}" />
 <meta name="keywords" content="Maria Rabelero,melonangie,Angie Rabelero,Rabelero,web developer,php developer,drupal,symfony,cv,resume,web,html,html5,css,css3,php,mysql,developer,development,gnu,linux,apache" />
 <meta name="author" content="{{ author }}" />
@@ -104,9 +104,14 @@
 <meta name="theme-color" content="{{ color }}" />
 
 <!--[if lt IE 9]>
-  <script src="{{assetsJs}}html5shiv.js"></script>
+  <script src="{{ assetsJs }}html5shiv.js"></script>
+<![endif]-->
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!--[if IE]>
+  <script src="{{ assetsJs }}vendor/ie10-viewport-bug-workaround.css"></script>
 <![endif]-->
 
 <!-- CSS -->
-<link rel="stylesheet" href="{{ assetsCss }}style.css">
 <link rel="stylesheet" href="{{ assetsCss }}vendor/jquery-fullpage.css">
+<link rel="stylesheet" href="{{ assetsCss }}style.css">

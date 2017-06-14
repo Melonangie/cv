@@ -124,11 +124,11 @@
     "yargs": "^6.6.0"
   },
   "dependencies": {
-    "html5shiv": "^3.7.3",
     "conditionizr": "^4.5.0",
-    "svgxuse": "^1.2.1",
+    "html5shiv": "^3.7.3",
     "lazysizes": "^3.0.0",
-    "pyrsmk-toast": "^2.1.1"
+    "pyrsmk-toast": "^2.1.1",
+    "svgxuse": "^1.2.1"
   },
   "licenses": [
     {

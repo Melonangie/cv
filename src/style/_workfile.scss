@@ -1,2 +1,147 @@
 // Place your Styling here
 
+@include fontface(myArial,(
+  filename: 'a_little_sunshine'
+));
+
+@include fontface(myArial,(
+  filename: 'daniel'
+));
+
+@include fontface(myArial,(
+  filename: 'laneup'
+));
+
+/* Body
+ * --------------------------------------- */
+body {
+  color: #fff;
+  font-family: arial,helvetica;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+.wrap{
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  position: relative;
+}
+h1{
+  font-size: 6em;
+}
+p{
+  font-size: 2em;
+}
+
+/* Nav
+ * --------------------------------------- */
+header {
+  position:fixed;
+  top:0;
+  left:0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin:0;
+}
+#menu > li {
+  display:inline-block;
+  color: #000;
+}
+#menu > li + li {
+  margin-left: 20px;
+}
+#menu > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  text-decoration:none;
+  color: #000;
+}
+#menu > li > a:hover,
+#menu > li > a:focus {
+  background-color: transparent;
+  background: rgba(255,255,255, 0.8);
+  transition: all 0.7s ease-out;
+}
+#menu > .active > a,
+#menu > .active > a:hover,
+#menu > .active > a:focus {
+  background:#666;
+  background: rgba(0,0,0, 0.5);
+  color: #fff;
+}
+#menu li.active a:hover{
+  color: #000;
+}
+#menu li a,
+#menu li.active a{
+  padding: 9px 18px;
+  display:block;
+}
+
+@media (min-width: 768px) {
+  .mahbrand {
+    float: left;
+  }
+  nav {
+    float: right;
+  }
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.intro p{
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+.section{
+  text-align:center;
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+#section0,
+#section1,
+#section2,
+#section3{
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Defining each sectino background and styles
+* --------------------------------------- */
+#section0{
+  background-image: url(imgs/bg1.jpg);
+}
+#section0 h1{
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+#section2{
+  background-image: url(imgs/bg3.jpg);
+  padding: 6% 0 0 0;
+}
+#section3{
+  background-image: url(imgs/bg4.jpg);
+  padding: 6% 0 0 0;
+}
+#section3 h1{
+  color: #000;
+}
+
+
+/*Adding background for the slides
+* --------------------------------------- */
+#slide1{
+  background-image: url(imgs/bg2.jpg);
+  padding: 6% 0 0 0;
+}
+#slide2{
+  background-image: url(imgs/bg5.jpg);
+  padding: 6% 0 0 0;
+}
