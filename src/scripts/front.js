@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     //Design
     sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke'],
-    verticalCentered: false,
+    // verticalCentered: false,
 
   });
 });
