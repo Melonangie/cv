@@ -15,6 +15,9 @@ const watchTask = () => {
 
   // Watch the Structure
   gulp.watch([templateFiles()], ['compiler:html'])
+
+  // Watch JS
+  gulp.watch([kc.src.scripts + '**.js'], ['combine:js'])
 }
 
 gulp.task('watch', ['browser-sync'], watchTask)

@@ -51,13 +51,13 @@
     "jsCopy": [
       "node_modules/lazysizes/plugins/respimg/ls.respimg.js",
       "node_modules/html5shiv/dist/html5shiv.js",
-      "node_modules/fullpage.js/vendors/jquery.easings.min.js",
-      "node_modules/fullpage.js/vendors/jquery.slimscroll.min.js",
-      "node_modules/fullpage.js/dist/jquery.fullpage.min.js",
-        "src/scripts/front.js"
+      "node_modules/fullpage.js/dist/jquery.fullpage.min.js"
     ],
     "jsCombine": {
-      "files": [],
+      "files": [
+        "src/scripts/marblue.js",
+        "src/scripts/front.js"
+      ],
       "filename": "scripts.js"
     },
     "fonts": [

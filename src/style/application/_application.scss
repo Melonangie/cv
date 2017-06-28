@@ -1,17 +1,44 @@
 // App Loader for ITCSS Structure
-
+//
+// ITCSS stands for Inverted Triangle architecture for CSS based on the write
+// CSS in specificity order principle. ITCSS is divided up into 7 distinct
+// sections:
+//
+// 1. Settings
+// Global variables and config.
+//
+// 2. Tools
+// Globally used mixins and functions.
+//
+// 3. Generic
+// Any additional resets on top of Normalize.
+//
+// 4. Base
+// Global baseline styles using element and attribute selectors only (No classes).
+//
+// 5. Objects
+// Cosmetic-free design patters, things like the grid, lists and the flag object.
+// The skeleton of the layout, with no visual styling applied.
+//
+// 6. Components
+// The skin on top of the skeleton, so anything with colours, borders,
+// backgrounds etc. If in doubt whether some code belongs in layout or components
+// then put it within components.
+//
+// 7. Trumps
+// Utilities, helpers and overrides.
 
 // 1. Settings
-
+@import 'settings/_settings';
 
 // 2. Tools
 
 
 // 3. Generic
-
+@import 'generic/_generic';
 
 // 4. Elements
-
+@import 'elements/_elements';
 
 // 5. Objects
 
