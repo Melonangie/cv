@@ -1,0 +1,25 @@
+{
+  "name": "mariarabelero",
+  "version": "0.0.1",
+  "launch_path": "/index.html",
+   "description": "Maria Rabelero, IT &amp; Web Development for Smart People",
+  "icons": {
+    "128": "/assets/img/logo.svg"
+  },
+  "developer": {
+    "name": "Maria Rabelero",
+    "email": "maria.rabelero@gmail.com",
+    "url": "https://maria-rabelero.com"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Maria Rabelero, IT &amp; Web Development for Smart People",      "description": "Hi! Welcome to Maria Rabelero's CV. I'm an IT &amp; full stack developer."
+    }
+  }
+}

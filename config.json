@@ -58,15 +58,31 @@
         "dest": "assets/img/system/"
       },
       {
+        "src": "logo.png",
+        "dest": "assets/img/system/"
+      },
+      {
         "src": ".htaccess",
         "dest": ""
       },
       {
-        "src": "404.html",
+        "src": "*.html",
         "dest": ""
       },
       {
-        "src": "robots.txt",
+        "src": "*.txt",
+        "dest": ""
+      },
+      {
+        "src": "*.xml",
+        "dest": ""
+      },
+      {
+        "src": "*.json",
+        "dest": ""
+      },
+      {
+        "src": "manifest.*",
         "dest": ""
       }
     ]

@@ -2,7 +2,26 @@
 {% extends "templates/_layout.twig" %}
 
 {% block page %}
-  <h1>Hello World</h1>
-  <p>Whats Up</p>
-  <div id="app"></div>
+
+    <article id="fullpage">
+
+      <section class="section">
+        {% include 'components/_section1.twig' %}
+      </section>
+
+      <section class="section">
+        {% include 'components/_section2.twig' %}
+      </section>
+      <section class="section">
+        {% include 'components/_section3.twig' %}
+      </section>
+      <section class="section">
+        {% include 'components/_section4.twig' %}
+      </section>
+      <section class="section">
+        {% include 'components/_section5.twig' %}
+      </section>
+
+  </article>
+
 {% endblock %}

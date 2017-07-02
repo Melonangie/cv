@@ -49,11 +49,11 @@ $kittn-spritefiles: (
 //
 // @type Map
 $kittn-activate: (
-  debugging: false,
+  debugging: true,
   box-sizing: true,
-  baseline: false,
+  baseline: true,
   antialias: true,
   hyphens: true,
-  viewport-fix: false,
+  viewport-fix: true,
   mobile-first: true
 );

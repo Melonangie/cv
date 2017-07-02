@@ -4,6 +4,7 @@
  * @description Compile Twig Files to HTML or copy Structure Files (usefull for PHP or Source Files for a CMS Compiler.
  */
 
+import yo from '../../.yo-rc.json'
 import kc from '../../config.json'
 import pkg from '../../package.json'
 import gulp from 'gulp'
@@ -20,7 +21,15 @@ const compilerHtmlTask = () => {
 
   // Set Base Locals
   const templateLocals = {
-    siteTitle: kc.template.globalTitle,
+    siteTitle: pkg.description,
+    siteDescription: pkg.author.about,
+    siteColor: yo["generator-kittn"].promptValues.projectthemecolor,
+    author: pkg.author.name,
+    authorEmail: pkg.author.email,
+    authorURL: pkg.author.url,
+    authorTweeter: pkg.author.twitter,
+    authorGoogle: pkg.author.google,
+    authorAvatar: pkg.author.avatar,
     cssName: pkg.cssFileName,
     assetsCss: kc.templatePath.css,
     assetsImg: kc.templatePath.contentimage,

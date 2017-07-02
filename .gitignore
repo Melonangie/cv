@@ -1,11 +1,62 @@
-.DS_Store
+# User-generated content #
+##########################
 *.sassc
 .sass-cache
+scss-lint-report.xml
 *.css.map
 npm-debug.log
 package-lock.json
 /node_modules
 /src/bower
-/.idea
 /dist
 /doc
+
+# OS-generated files #
+######################
+._*
+*~
+*.un~
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+Icon
+.cache
+
+# IDE-generated files #
+#######################
+.project
+.settings
+.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+.idea/*
+/.idea
+nbproject
+/nbproject/*
+.komodotools
+*.komodoproject
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+
+# Always-ignore #
+#################
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.swo
+*.swp
+*.vi

@@ -1,13 +1,16 @@
 {# layout.twig #}
 <!DOCTYPE html>
-<html lang="de">
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#" dir="ltr" itemscope itemtype="http://schema.org/WebPage" manifest="manifest.appcache">
   <head>
     {% include '../parts/_site-header.twig' %}
   </head>
   <body>
-    <section>
+    <header>
+      {% include '../parts/_site-menu.twig' %}
+    </header>
+    <main>
       {% block page %}{% endblock %}
-    </section>
+    </main>
     {% include '../parts/_site-scripts.twig' %}
   </body>
 </html>
