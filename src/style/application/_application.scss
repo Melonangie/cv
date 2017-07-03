@@ -1,5 +1,17 @@
 // App Loader for ITCSS Structure
-
+//
+// 1. Settings:   Global variables, settings, configs, etc.
+// 2. Tools:      Site-wide mixins and functions.
+// 3. Generic:    Low-specificity, far-reaching rulesets, any additional resets
+//                on top of Normalize.
+// 4. Elements:   Unclassed HTML elements
+// 5. Objects:    Cosmetic-free objects, abstractions, and design patterns.
+//                Think of it like the skeleton of the layout, with no visual
+//                styling applied.
+// 6. Components: Designed components, complete chunks of UI.
+//                Think of it like the skin on top of the skeleton.
+// 7. Trumps:     High-specificity, very explicit selectors. Overrides and
+//                helper classes.
 
 // 1. Settings
 @import 'settings/_settings';
@@ -11,13 +23,14 @@
 
 
 // 4. Elements
+@import 'elements/_elements';
 
 
 // 5. Objects
 
 
 // 6. Components
-
+@import 'components/_components';
 
 // 7. Trumps
 

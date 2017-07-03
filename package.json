@@ -65,6 +65,7 @@
     "eslint-plugin-standard": "^2.0.1",
     "extract-text-webpack-plugin": "2.1.0",
     "friendly-errors-webpack-plugin": "^1.6.1",
+    "fullpage.js": "^2.9.4",
     "gulp": "^3.9.1",
     "gulp-bump": "^2.7.0",
     "gulp-changed": "^3.1.0",

@@ -1,0 +1,38 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  @include text-truncate();
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  color: c('white');
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+header {
+  @include bar-top($z: 10, $variant: a);
+}
+
+nav ul {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+nav ul > li {
+  display: block;
+  padding: 0;
+}
+
+nav ul > li > a {
+  display: block;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: ff('neou', 'segoe'),
+}

@@ -1,9 +1,1 @@
-header {
-  @include bar-top($z: 10, $variant: a);
-  @include row(0, $layout: flex);
-}
 
-.container {
-  @include adaptive();
-  @include column($layout: flex);
-}

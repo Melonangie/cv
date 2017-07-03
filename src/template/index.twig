@@ -4,24 +4,21 @@
 {% block page %}
 
     <article id="fullpage">
-
-      <section class="section">
+      <section class="section" id="section1">
         {% include 'components/_section1.twig' %}
       </section>
-
-      <section class="section">
+      <section class="section" id="section2">
         {% include 'components/_section2.twig' %}
       </section>
-      <section class="section">
-        {% include 'components/_section3.twig' %}
+      <section class="section" id="section3">
+        {% include 'components/_section2.twig' %}
       </section>
-      <section class="section">
-        {% include 'components/_section4.twig' %}
+      <section class="section" id="section4">
+        {% include 'components/_section2.twig' %}
       </section>
-      <section class="section">
-        {% include 'components/_section5.twig' %}
+      <section class="section" id="section5">
+        {% include 'components/_section2.twig' %}
       </section>
-
   </article>
 
 {% endblock %}

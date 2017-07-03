@@ -42,7 +42,10 @@
       "node_modules/html5shiv/dist/html5shiv.js"
     ],
     "jsCombine": {
-      "files": [],
+      "files": [
+        "node_modules/fullpage.js/dist/jquery.fullpage.js",
+        "src/scripts/app.js"
+      ],
       "filename": "scripts.js"
     },
     "fonts": [

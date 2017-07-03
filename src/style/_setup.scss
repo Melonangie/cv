@@ -218,7 +218,6 @@ $kittn-global-heading: (
 // @prop {string|bool} base.type.extend        - The definition can be linked to a global definition
 $kittn-typostyles-map: (
   h1: (
-    font-family: neou,
     font-size: 36,
     line-height: d,
     margin-bottom: gap(.5),
@@ -227,7 +226,6 @@ $kittn-typostyles-map: (
     extend: '%heading'
   ),
   h2: (
-    font-family: neou,
     font-size: 32,
     line-height: d,
     margin-bottom: gap(.5),
@@ -236,7 +234,6 @@ $kittn-typostyles-map: (
     extend: '%heading'
   ),
   h3: (
-    font-family: neou,
     font-size: 29,
     line-height: d,
     margin-bottom: gap(.5),
@@ -245,7 +242,6 @@ $kittn-typostyles-map: (
     extend: '%heading'
   ),
   h4: (
-    font-family: neou,
     font-size: 25,
     line-height: d,
     margin-bottom: gap(.5),
@@ -254,7 +250,6 @@ $kittn-typostyles-map: (
     extend: '%heading'
   ),
   h5: (
-    font-family: neou,
     font-size: 22,
     line-height: d,
     margin-bottom: gap(.5),
@@ -263,7 +258,6 @@ $kittn-typostyles-map: (
     extend: '%heading'
   ),
   h6: (
-    font-family: neou,
     font-size: 19,
     line-height: d,
     margin-bottom: gap(.5),
