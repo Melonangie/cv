@@ -1,4 +1,5 @@
-# http://editorconfig.org
+# editorconfig.org
+
 root = true
 
 [*]
@@ -11,6 +12,3 @@ insert_final_newline = true
 
 [*.md]
 trim_trailing_whitespace = false
-
-[*.php]
-indent_size = 4
