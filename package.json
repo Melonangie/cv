@@ -1,12 +1,15 @@
 {
   "name": "mariarabelero",
   "version": "0.0.1",
-  "description": "",
+  "description": "Hi! Welcome to Maria Rabelero's site. I&#39;m an IT &amp; full stack developer.",
   "license": "MIT",
   "author": {
     "name": "Maria Rabelero",
     "email": "maria.rabelero@gmail.com",
-    "url": "https://github.com/mariarabelero/mariarabelero.github.io.git"
+    "url": "https://github.com/mariarabelero/mariarabelero.github.io.git",
+    "twitterID": "@melonangie",
+    "googleID": "106004297750760100468",
+    "avatar": "https://avatars2.githubusercontent.com/u/1419851"
   },
   "repository": "https://github.com/mariarabelero/mariarabelero.github.io.git",
   "scripts": {

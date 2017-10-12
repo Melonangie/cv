@@ -3,7 +3,7 @@
   "warnings": [],
   "version": "3.6.0",
   "hash": "af2d0e0e988b5c613022",
-  "time": 5061,
+  "time": 8135,
   "publicPath": "/assets/",
   "assetsByChunkName": {
     "main": [
@@ -14,7 +14,7 @@
   "assets": [
     {
       "name": "js/main.js",
-      "size": 91281,
+      "size": 91283,
       "chunks": [
         0
       ],
@@ -25,7 +25,7 @@
     },
     {
       "name": "js/main.js.map",
-      "size": 736645,
+      "size": 738319,
       "chunks": [
         0
       ],
@@ -2725,9 +2725,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.typed.uint8-array.js",
-          "issuerId": 96,
-          "issuerName": "./node_modules/core-js/modules/es6.typed.uint8-array.js",
+          "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.typed.int8-array.js",
+          "issuerId": 91,
+          "issuerName": "./node_modules/core-js/modules/es6.typed.int8-array.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -4253,9 +4253,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.array.copy-within.js",
-          "issuerId": 152,
-          "issuerName": "./node_modules/core-js/modules/es6.array.copy-within.js",
+          "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.array.find.js",
+          "issuerId": 153,
+          "issuerName": "./node_modules/core-js/modules/es6.array.find.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -5336,9 +5336,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.regexp.match.js",
-          "issuerId": 146,
-          "issuerName": "./node_modules/core-js/modules/es6.regexp.match.js",
+          "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.regexp.replace.js",
+          "issuerId": 147,
+          "issuerName": "./node_modules/core-js/modules/es6.regexp.replace.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -6241,9 +6241,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.string.includes.js",
-          "issuerId": 143,
-          "issuerName": "./node_modules/core-js/modules/es6.string.includes.js",
+          "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.string.ends-with.js",
+          "issuerId": 142,
+          "issuerName": "./node_modules/core-js/modules/es6.string.ends-with.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -6297,9 +6297,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.string.ends-with.js",
-          "issuerId": 142,
-          "issuerName": "./node_modules/core-js/modules/es6.string.ends-with.js",
+          "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.string.starts-with.js",
+          "issuerId": 141,
+          "issuerName": "./node_modules/core-js/modules/es6.string.starts-with.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -7414,9 +7414,9 @@
             0
           ],
           "assets": [],
-          "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.number.is-safe-integer.js",
-          "issuerId": 158,
-          "issuerName": "./node_modules/core-js/modules/es6.number.is-safe-integer.js",
+          "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.number.is-integer.js",
+          "issuerId": 157,
+          "issuerName": "./node_modules/core-js/modules/es6.number.is-integer.js",
           "failed": false,
           "errors": 0,
           "warnings": 0,
@@ -14553,9 +14553,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.typed.uint8-array.js",
-      "issuerId": 96,
-      "issuerName": "./node_modules/core-js/modules/es6.typed.uint8-array.js",
+      "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.typed.int8-array.js",
+      "issuerId": 91,
+      "issuerName": "./node_modules/core-js/modules/es6.typed.int8-array.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -16081,9 +16081,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.array.copy-within.js",
-      "issuerId": 152,
-      "issuerName": "./node_modules/core-js/modules/es6.array.copy-within.js",
+      "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.array.find.js",
+      "issuerId": 153,
+      "issuerName": "./node_modules/core-js/modules/es6.array.find.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -17164,9 +17164,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.regexp.match.js",
-      "issuerId": 146,
-      "issuerName": "./node_modules/core-js/modules/es6.regexp.match.js",
+      "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.regexp.replace.js",
+      "issuerId": 147,
+      "issuerName": "./node_modules/core-js/modules/es6.regexp.replace.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -18069,9 +18069,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.string.includes.js",
-      "issuerId": 143,
-      "issuerName": "./node_modules/core-js/modules/es6.string.includes.js",
+      "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.string.ends-with.js",
+      "issuerId": 142,
+      "issuerName": "./node_modules/core-js/modules/es6.string.ends-with.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -18125,9 +18125,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.string.ends-with.js",
-      "issuerId": 142,
-      "issuerName": "./node_modules/core-js/modules/es6.string.ends-with.js",
+      "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.string.starts-with.js",
+      "issuerId": 141,
+      "issuerName": "./node_modules/core-js/modules/es6.string.starts-with.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,
@@ -19242,9 +19242,9 @@
         0
       ],
       "assets": [],
-      "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.number.is-safe-integer.js",
-      "issuerId": 158,
-      "issuerName": "./node_modules/core-js/modules/es6.number.is-safe-integer.js",
+      "issuer": "/Users/m.rabelero.campos/Sites/mariarabelero.github.io/node_modules/core-js/modules/es6.number.is-integer.js",
+      "issuerId": 157,
+      "issuerName": "./node_modules/core-js/modules/es6.number.is-integer.js",
       "failed": false,
       "errors": 0,
       "warnings": 0,

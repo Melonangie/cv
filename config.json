@@ -42,7 +42,10 @@
       "node_modules/lazysizes/plugins/respimg/ls.respimg.js"
     ],
     "jsCombine": {
-      "files": [],
+      "files": [
+        "node_modules/fullpage.js/dist/jquery.fullpage.min.js",
+        "src/scripts/app.js"
+      ],
       "filename": "scripts.js"
     },
     "fonts": [
