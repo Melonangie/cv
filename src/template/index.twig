@@ -2,42 +2,92 @@
 {% extends "templates/_layout.twig" %}
 
 {% block page %}
-  <div id="fullpage">
+<div id="fullpage" class="pages-stack" role="main">
 
-  <div class="section " id="section0">
-    <div class="intro">
-      <img src="imgs/1.png"  alt="1"/>
-      <h1>Sliders navigation dots</h1>
-      <p>Create a navigation for your landscape sliders</p>
-    </div>
-  </div>
-  <div class="section" id="section1">
-      <div class="slide" id="slide1" data-anchor="slide1">
-      <div class="intro">
-        <h1>Clickable</h1>
-        <p>
-          You can even click on the navigation and jump directly to another section.
-        </p>
+  <article class="section " id="home">
+    <section class="slide" id="slide1" data-anchor="slide1">
+      <video class="myVideo" loop muted data-autoplay>
+        <source src="assets/videos/Joomla-Video-Background.mp4" type="video/mp4">
+        <source src="assets/videos/Joomla-Video-Background.webm" type="video/webm">
+      </video>
+      <div class="layer container">
+        <header>
+          <h1>slide1</h1>
+          <p>And it will animate down to the first section</p>
+        </header>
       </div>
-    </div>
+    </section>
 
-      <div class="slide" id="slide2" data-anchor="slide2">
-      <h1>Slide 2</h1>
-    </div>
+    <section class="slide" id="slide2" data-anchor="slide2">
+      <video class="myVideo" loop muted data-autoplay>
+        <source src="assets/videos/Aloha-Mundo.mp4" type="video/mp4">
+        <source src="assets/videos/Aloha-Mundo.ogv" type="video/ogv">
+        <source src="assets/videos/Aloha-Mundo.webm" type="video/webm">
+      </video>
+      <div class="layer container">
+        <header>
+          <h1>slide2</h1>
+          <p>And it will animate down to the first section</p>
+        </header>
+      </div>
+    </section>
 
-    <div class="slide" id="slide3" data-anchor="slide3">
-      <h1>Slide 3</h1>
-    </div>  <div class="slide" id="slide3" data-anchor="slide3">
-      <h1>Slide 4</h1>
+    <section class="slide" id="slide3" data-anchor="slide3">
+      <video class="myVideo" loop muted data-autoplay>
+        <source src="assets/videos/Work-Space.mp4" type="video/mp4">
+        <source src="assets/videos/Work-Space.webm" type="video/webm">
+      </video>
+      <div class="layer container">
+        <header>
+          <h1>slide3</h1>
+          <p>And it will animate down to the first section</p>
+        </header>
+      </div>
+    </section>
+  </article>
+
+  <article class="section" id="services">
+    <div class="container">
+      <header>
+        <h1>services</h1>
+        <p>And it will animate down to the first section</p>
+      </header>
+      <p>And it will animate down to the first section<br />And it will animate down to the first section</p>
     </div>
-    <div class="slide" id="slide3" data-anchor="slide3">
-      <h1>Slide 5</h1>
+  </article>
+
+  <article class="section" id="about">
+    <div class="container">
+      <header>
+        <h1>about</h1>
+        <p>And it will animate down to the first section</p>
+      </header>
+      <p>And it will animate down to the first section<br />And it will animate down to the first section</p>
     </div>
-  </div>
-  <div class="section" id="section2">
-    <div class="intro">
-      <h1>Enjoy it</h1>
+  </article>
+
+  <article class="section" id="work">
+    <div class="container">
+      <header>
+        <h1>work</h1>
+        <p>And it will animate down to the first section</p>
+      </header>
+      <p>And it will animate down to the first section<br />And it will animate down to the first section</p>
     </div>
-  </div>
+  </article>
+
+  <article class="section" id="contact">
+    <div class="container">
+      <header>
+        <h1>contact</h1>
+        <p>And it will animate down to the first section</p>
+      </header>
+      <p>And it will animate down to the first section<br />And it will animate down to the first section</p>
+    </div>
+    <footer class="footer" role="contentinfo">
+      <p>Copyright 2009 Your name</p>
+    </footer>
+  </article>
+
 </div>
 {% endblock %}

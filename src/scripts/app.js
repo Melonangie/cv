@@ -1,7 +1,12 @@
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        anchors: ['firstPage', 'secondPage', '3rdPage'],
-        sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
-        slidesNavigation: true,
-      });
-    });
+//=require _conditionizr.js
+
+// Main JS File
+$(document).ready(function() {
+  $('#fullpage').fullpage({
+              anchors: ['home', 'services', 'about', 'work', 'contact'],
+              menu: '#menu',
+              slidesNavigation: true,
+              verticalCentered: true,
+              continuousVertical: true
+  });
+});

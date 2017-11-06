@@ -1,0 +1,47 @@
+#header {
+  @include bar-top($z: 50, $variant: f);
+
+  .row-header {
+    @include row($spacing: 0, $layout: flex);
+
+    .brand {
+      @include column($spacing: 0, $layout: flex);
+      :not(:last-child) {
+        margin-right: rem(15);
+      }
+      h3,
+      img {
+        display: inline-block;
+        padding-top: 1rem
+      }
+    }
+
+    .navigation {
+      position: relative;
+      margin-left:auto;
+      margin-right:0;
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        list-style: none;
+        :not(:last-child) {
+          margin-right: rem(15);
+
+        }
+        a {
+          width: rem(100);
+          padding: 1.8rem 0.5rem 0.5rem;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          border-radius: 0 0 4px 4px;
+          background-color: gray;
+        }
+      }
+    }
+
+  }
+}

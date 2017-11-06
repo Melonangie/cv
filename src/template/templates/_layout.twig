@@ -1,10 +1,11 @@
 {# layout.twig #}
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage" xmlns:fb="https://www.facebook.com/2008/fbml">
   <head>
     {% include '../parts/_site-header.twig' %}
   </head>
   <body>
+    {% include '../components/_navigation.twig' %}
     {% block page %}{% endblock %}
     {% include '../parts/_site-scripts.twig' %}
   </body>

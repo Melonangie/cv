@@ -12,6 +12,7 @@
     "cssimg": "dist/assets/img/",
     "bitmaps": "dist/assets/img/bitmaps/",
     "vectors": "dist/assets/img/svgfiles/",
+    "videos": "dist/assets/videos/",
     "contentimage": "dist/images/",
     "webpackjsassets": "assets/",
     "webpackpublic": "dist/"
@@ -22,6 +23,7 @@
     "js": "assets/js/",
     "fonts": "assets/fonts/",
     "cssimage": "assets/img/",
+    "videos": "videos/",
     "contentimage": "images/"
   },
   "css": {
@@ -43,8 +45,10 @@
     ],
     "jsCombine": {
       "files": [
-        "node_modules/fullpage.js/dist/jquery.fullpage.min.js",
-        "src/scripts/app.js"
+        "node_modules/fullpage.js/dist/jquery.fullpage.js",
+        "node_modules/fullpage.js/dist/jquery.easings.min.js",
+        "src/scripts/app.js",
+        "src/scripts/analytics.js"
       ],
       "filename": "scripts.js"
     },
@@ -181,7 +185,8 @@
     "system": "src/.system/",
     "jsEntryPoints": {
       "main": "../src/js/main.js"
-    }
+    },
+    "videos": "src/videos/"
   },
   "cssabove": {
     "width": "1024",

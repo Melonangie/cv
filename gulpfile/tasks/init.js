@@ -17,6 +17,7 @@ const initTask = (cb) => {
     [
       'copy:launch',
       'copy:fonts',
+      'copy:videos',
       'rebuild:js',
       'rebuild:images',
       'copy:contentimages'

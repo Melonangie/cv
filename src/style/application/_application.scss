@@ -2,22 +2,24 @@
 
 
 // 1. Settings
-@import 'settings/settings';
+@import 'settings/_settings';
 
 // 2. Tools
 
 
 // 3. Generic
-
+// @import 'generic/_generic';
 
 // 4. Elements
+@import 'elements/_elements';
 
 
 // 5. Objects
+@import 'objects/_objects';
 
 
 // 6. Components
-
+@import 'components/_navigation';
 
 // 7. Trumps
 
