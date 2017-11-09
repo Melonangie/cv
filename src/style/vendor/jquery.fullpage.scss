@@ -47,7 +47,7 @@ html.fp-enabled,
   height: 100%;
   overflow: hidden;
   position: relative;
-  transition: all 0.3s ease-out;
+  transition: all .3s ease-out;
 }
 
 .fp-section.fp-table,
@@ -78,24 +78,32 @@ html.fp-enabled,
   z-index: 4;
   top: 50%;
   cursor: pointer;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  margin-top: -38px;
+  width: 30px;
+  height: 30px;
+  border-color: transparent;
+  opacity: 0.3;
+  margin-top: -30px;
+  border-radius: 4px;
+  transition: all .3s ease-in-out;
   transform: translate3d(0, 0, 0);
 }
 
 .fp-controlArrow.fp-prev {
-  left: 15px;
-  width: 0;
-  border-width: 38.5px 34px 38.5px 0;
-  border-color: transparent #fff transparent transparent;
+  left: 30px;
+  border-left: 6px #fff solid;
+  border-top: 6px #fff solid;
+  transform: rotate(-45deg);
 }
 
 .fp-controlArrow.fp-next {
-  right: 15px;
-  border-width: 38.5px 0 38.5px 34px;
-  border-color: transparent transparent transparent #fff;
+  right: 30px;
+  border-right: 6px #fff solid;
+  border-bottom: 6px #fff solid;
+  transform: rotate(-45deg);
+}
+
+.fp-controlArrow:hover {
+  opacity: 1;
 }
 
 .fp-scrollable {
@@ -135,13 +143,13 @@ html.fp-enabled,
 .fp-slidesNav{
   position: absolute;
   z-index: 4;
-  left: 50%;
+  left: 49.5%;
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
 .fp-slidesNav.bottom {
-  bottom: 17px;
+  bottom: 45px;
 }
 
 .fp-slidesNav.top {
@@ -157,10 +165,10 @@ html.fp-enabled,
 #fp-nav ul li,
 .fp-slidesNav ul li {
   display: block;
-  width: 14px;
+  width: 13px;
   height: 13px;
-  margin: 7px;
-  position:relative;
+  margin: 12px;
+  position: relative;
 }
 
 .fp-slidesNav ul li {
@@ -178,36 +186,32 @@ html.fp-enabled,
   text-decoration: none;
 }
 
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 12px;
+  width: 12px;
+  background: #fff;
+  opacity: 0.3;
+  border: 0;
+  z-index: 1;
+  border-radius: 50%;
+  transition: all .3s ease-in-out;
+}
+
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span {
-  height: 12px;
-  width: 12px;
-  margin: -6px 0 0 -6px;
-  border-radius: 100%;
-}
-
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-  border-radius: 50%;
-  position: absolute;
-  z-index: 1;
-  height: 4px;
-  width: 4px;
-  border: 0;
-  background: #333;
-  left: 50%;
-  top: 50%;
-  margin: -2px 0 0 -2px;
-  transition: all 0.1s ease-in-out;
+  background: c('primary');
+  opacity: 1;
 }
 
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span {
-  width: 10px;
-  height: 10px;
-  margin: -5px 0px 0px -5px;
+  opacity: .8;
 }
 
 #fp-nav ul li .fp-tooltip {
@@ -227,7 +231,6 @@ html.fp-enabled,
 
 #fp-nav ul li:hover .fp-tooltip,
 #fp-nav.fp-show-active a.active + .fp-tooltip {
-  -webkit-transition: opacity 0.2s ease-in;
   transition: opacity 0.2s ease-in;
   width: auto;
   opacity: 1;

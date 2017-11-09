@@ -1,0 +1,31 @@
+body {
+  color: c('white');;
+  transition: $le-transiton;
+}
+
+h1 {
+  font-family: "daniel", "Montserrat", Arial, sans-serif;
+}
+
+h2 {
+  font-family: "neou_thin", "Montserrat", Arial, sans-serif;
+}
+
+/* Hiding video controls
+* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+* --------------------------------------- */
+video {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-size: contain;
+  background-attachment: fixed;
+  object-fit: cover; /*cover video background */
+  z-index: 3;
+  transition: $le-transiton;
+
+  ::-webkit-media-controls {
+    display: none !important;
+  }
+}

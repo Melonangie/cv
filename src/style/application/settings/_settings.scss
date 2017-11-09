@@ -1,1 +1,56 @@
+@include fontface(a_little_sunshine, (
+  filename: 'a_little_sunshine',
+  short: false
+));
 
+@include fontface(laneup, (
+  filename: 'laneup',
+  short: false
+));
+
+@include fontface(laneposh, (
+  filename: 'laneposh',
+  short: false
+));
+
+@include fontface(daniel, (
+  filename: 'daniel',
+  short: false
+));
+
+@include fontface(neou_bold, (
+  filename: 'neou_bold',
+  short: false
+));
+
+@include fontface(neou_thin, (
+  filename: 'neou_thin',
+  short: false
+));
+
+$le-transiton: all 1.3s ease-in-out;
+$opacity-min: .2;
+$opacity-max: .8;
+
+$le-sections-map: (
+  'contact': (
+    nav: #71BEAF,
+    body: #64A79A,
+    image: '../img/svgfiles/contact.svg',
+  ),
+  'about': (
+    nav: #7D637B,
+    body: #534152,
+    image: '../img/svgfiles/about.svg',
+  ),
+  'services': (
+    nav: #df5c64,
+    body: #A53641,
+    image: '../img/svgfiles/services.svg',
+  ),
+  'work': (
+    nav: #91C259,
+    body: #6F9445,
+    image: '../img/svgfiles/services.svg',
+  )
+);

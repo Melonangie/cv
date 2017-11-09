@@ -6,7 +6,11 @@
   </head>
   <body>
     {% include '../components/_navigation.twig' %}
-    {% block page %}{% endblock %}
+    <main>
+      <article>
+        {% block page %}{% endblock %}
+      </article>
+    </main>
     {% include '../parts/_site-scripts.twig' %}
   </body>
 </html>

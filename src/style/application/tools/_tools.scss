@@ -1,0 +1,38 @@
+.container {
+  @include container(false, $spacing: 0);
+  @include adaptive();
+}
+
+.row {
+  @include row(0, $layout: flex, $o:(
+    valign: stretch
+  ));
+}
+
+.column {
+  @include column($layout: flex);
+}
+
+.footer {
+  @include bar-bottom($variant: a);
+}
+
+.slide {
+
+}
+
+
+@mixin le-section($section) {
+  $image: map-get(map-get($le-sections-map, $section), image);
+  $body: map-get(map-get($le-sections-map, $section), body);
+  $nav: map-get(map-get($le-sections-map, $section), nav);
+
+  background: url($image), url('../../images/pattern.png'), $body;
+  background-size: cover;
+  background-attachment: fixed;
+  transition: $le-transiton;
+
+  nav li.active a {
+    background-color: $nav;
+  }
+}

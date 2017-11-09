@@ -1,0 +1,109 @@
+.fp-viewing-home-slide1,
+.fp-viewing-home-slide2,
+.fp-viewing-home-slide3 {
+  background: c('primary');
+
+  nav li.active a {
+    background-color: c('primary');
+    transition: all 1.3s ease-in-out;
+  }
+}
+
+  /* Layer with position absolute in order to have it over the video
+  * --------------------------------------- */
+#slide1.active .layer,
+#slide2.active .layer,
+#slide3.active .layer {
+  text-align: center;
+  width: 33.3%;
+  z-index: 4;
+  transition: $le-transiton;
+
+  /*
+  * Preventing flicker on some browsers
+  * See http://stackoverflow.com/a/36671466/1081396  or issue #183
+  */
+  @include break(4) {
+    @include performance(false);
+  }
+}
+
+#slide1.active .layer {
+  position: absolute;
+  left: 0%;
+  top: 35%;
+}
+
+#slide2.active .layer {
+  position: absolute;
+  left: 33.3%;
+  top: 35%;
+}
+
+#slide3.active .layer {
+  position: absolute;
+  left: 66.6%;
+  top: 35%;
+}
+
+.overlay {
+  background-image:  url('../img/svgfiles/home.svg'), url('../../images/pattern.png');
+  background-size: cover, auto;
+  background-attachment: fixed, scroll;
+  background-position: 0 0;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .5;
+  transition: $le-transiton;
+}
+
+.headline {
+  // border: 2px solid rgba(255, 255, 255,  0.3);
+   // border: 1px solid c('primary');
+   // border-bottom: none;
+  // color: #64BCCB;
+  // color: c('primary');
+    // text-transform: uppercase;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  transition: $le-transiton;
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left:5;
+    border-bottom: 1px solid c('primary');
+    width: 55px;
+    content: "";
+  }
+
+  @include break(4) {
+    width: max-content;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    padding: 30px 40px 0 40px;
+    margin: 0;
+    letter-spacing: 0;
+    font-size: 52px;
+    line-height: 52px;
+    font-family: daniel;
+  }
+
+  p{
+    padding: 0 10px 15px;
+    margin: 0;
+    letter-spacing: 3px;
+    font-size: 20px;
+    line-height: 20px;
+    font-family:neou_bold;
+  }
+}

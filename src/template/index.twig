@@ -4,49 +4,58 @@
 {% block page %}
 <div id="fullpage" class="pages-stack" role="main">
 
-  <article class="section " id="home">
-    <section class="slide" id="slide1" data-anchor="slide1">
-      <video class="myVideo" loop muted data-autoplay>
+  <div class="section" id="section0">
+
+    <div class="slide" id="slide1" data-anchor="slide1">
+      <video class="joomla" loop muted data-autoplay>
         <source data-src="assets/videos/Joomla-Video-Background.mp4" type="video/mp4">
         <source data-src="assets/videos/Joomla-Video-Background.webm" type="video/webm">
       </video>
-      <div class="layer container">
-        <header>
-          <h1>slide1</h1>
-          <p>And it will animate down to the first section</p>
-        </header>
+      <div class="overlay"></div>
+      <div class="layer">
+        <div class="container">
+          <div class="headline">
+            <h1>Creative. Design. Technology.</h1>
+            <p>Senior Web Developer</p>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section class="slide" id="slide2" data-anchor="slide2">
-      <video class="myVideo" loop muted data-autoplay>
+    <div class="slide" id="slide2" data-anchor="slide2">
+      <video class="aloha-mundo" loop muted data-autoplay>
         <source data-src="assets/videos/Aloha-Mundo.mp4" type="video/mp4">
         <source data-src="assets/videos/Aloha-Mundo.ogv" type="video/ogv">
         <source data-src="assets/videos/Aloha-Mundo.webm" type="video/webm">
       </video>
-      <div class="layer container">
-        <header>
-          <h1>slide2</h1>
-          <p>And it will animate down to the first section</p>
-        </header>
+      <div class="layer">
+        <div class="container">
+          <div class="headline">
+            <h1>slide2</h1>
+            <p>assets/videos/Aloha-Mundo.webm And it will animate down to the first section</p>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section class="slide" id="slide3" data-anchor="slide3">
-      <video class="myVideo" loop muted data-autoplay>
+    <div class="slide" id="slide3" data-anchor="slide3">
+      <video class="work-space" loop muted data-autoplay>
         <source data-src="assets/videos/Work-Space.mp4" type="video/mp4">
         <source data-src="assets/videos/Work-Space.webm" type="video/webm">
       </video>
-      <div class="layer container">
-        <header>
-          <h1>slide3</h1>
-          <p>And it will animate down to the first section</p>
-        </header>
+      <div class="layer">
+        <div class="container">
+          <div class="headline">
+            <h1>slide3</h1>
+            <p>assets/videos/Work-Space.webmAnd it will animate down to the first section</p>
+          </div>
+        </div>
       </div>
-    </section>
-  </article>
+    </div>
 
-  <article class="section" id="services">
+  </div>
+
+  <div class="section" id="section1">
     <div class="container">
       <header>
         <h1>services</h1>
@@ -54,9 +63,9 @@
       </header>
       <p>And it will animate down to the first section<br />And it will animate down to the first section</p>
     </div>
-  </article>
+  </div>
 
-  <article class="section" id="about">
+  <div class="section" id="section2">
     <div class="container">
       <header>
         <h1>about</h1>
@@ -64,9 +73,9 @@
       </header>
       <p>And it will animate down to the first section<br />And it will animate down to the first section</p>
     </div>
-  </article>
+  </div>
 
-  <article class="section" id="work">
+  <div class="section" id="section3">
     <div class="container">
       <header>
         <h1>work</h1>
@@ -74,9 +83,9 @@
       </header>
       <p>And it will animate down to the first section<br />And it will animate down to the first section</p>
     </div>
-  </article>
+  </div>
 
-  <article class="section" id="contact">
+  <div class="section" id="section4">
     <div class="container">
       <header>
         <h1>contact</h1>
@@ -87,7 +96,7 @@
     <footer class="footer" role="contentinfo">
       <p>Copyright 2009 Your name</p>
     </footer>
-  </article>
+  </div>
 
 </div>
 {% endblock %}
