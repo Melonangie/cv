@@ -1,3 +1,7 @@
 .fp-viewing-about {
   @include le-section(about);
+
+  .pic {
+    background-image: url('../../images/pattern.png');
+  }
 }

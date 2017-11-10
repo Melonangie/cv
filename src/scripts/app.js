@@ -8,7 +8,7 @@ $(document).ready(function() {
   // fullpage.js
   $('#fullpage').fullpage({
     //Navigation
-    anchors: ['home', 'services', 'about', 'work', 'contact'],
+    anchors: ['home', 'about', 'skills', 'work', 'contact'],
     menu: '#menu',
     slidesNavigation: true,
     // verticalCentered: false,
@@ -23,6 +23,29 @@ $(document).ready(function() {
     responsiveWidth: stopWidth,
     responsiveHeight: stopHeight,
     fixedElements: '#header',
+
+    afterLoad: function(anchorLink, index){
+      //section 2
+      if(index == 2){
+        //moving the image
+        $('#section1').find('h1').delay(500).animate({
+          left: '0%'
+        }, 1500, 'easeOutExpo');
+
+        $('#section1').find('p').first().fadeIn(1800, function(){
+          $('#section1').find('p').last().fadeIn(1800);
+        });;
+
+      }
+
+      //section 3
+      if(anchorLink == '3rdPage'){
+        //moving the image
+        $('#section2').find('h1').delay(500).animate({
+          left: '0%'
+        }, 1500, 'easeOutExpo');
+      }
+    }
 
     // Going to sections, startig from 1
   /*   onLeave: function(index, nextIndex, direction){

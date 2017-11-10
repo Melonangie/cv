@@ -29,28 +29,43 @@
 ));
 
 $le-transiton: all 1.3s ease-in-out;
+$le-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+// $le-box-shadow: box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
 $opacity-min: .2;
 $opacity-max: .8;
 
 $le-sections-map: (
-  'contact': (
-    nav: #71BEAF,
-    body: #64A79A,
-    image: '../img/svgfiles/contact.svg',
-  ),
   'about': (
-    nav: #7D637B,
-    body: #534152,
-    image: '../img/svgfiles/about.svg',
-  ),
-  'services': (
     nav: #df5c64,
     body: #A53641,
-    image: '../img/svgfiles/services.svg',
+    image: '../img/svgfiles/about.svg',
+  ),
+  'skills': (
+    nav: #7D637B,
+    body: #534152,
+    image: '../img/svgfiles/skills.svg',
   ),
   'work': (
     nav: #91C259,
     body: #6F9445,
-    image: '../img/svgfiles/services.svg',
+    image: '../img/svgfiles/work.svg',
+  ),
+  'contact': (
+    nav: #71BEAF,
+    body: #64A79A,
+    image: '../img/svgfiles/contact.svg',
   )
 );
+
+    #section1 h1{
+      left: 130%;
+      position:relative;
+    }
+    #section1 p{
+      display:none;
+    }
+    #section2 h1{
+      left: -130%;
+      position:relative;
+    }
+

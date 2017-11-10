@@ -21,7 +21,6 @@
 
 }
 
-
 @mixin le-section($section) {
   $image: map-get(map-get($le-sections-map, $section), image);
   $body: map-get(map-get($le-sections-map, $section), body);
