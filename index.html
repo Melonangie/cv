@@ -1,470 +1,457 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <!--
-Hello visitor!
-Why don't you check the source code of this site on GitHub?
-I used several great tools like Yarn, Yeoman, and Gulp.
-Hope you mew it ♥
-
-           M.                                         .:M
-           MMMM.                                   .:MMMM
-           MMMMMMMM                             .:MMMMMMM
-           :MMHHHMMMMHMM.  .:MMMMMMMMM:.      .:MMHHMHMM:
-            :MMHHIIIHMMMM.:MMHHHHIIIHHMMMM. .:MMHIHIIHHM:
-             MMMHIIIIHHMMMIIHHMHHIIIIIHHMMMMMMHHHIIIIHHM:
-             :MMHIIIIIHMMMMMMMHHIIIIIIHHHMMMMMHHII:::IHM.
-              MH:I:::IHHMMMMMHHII:::IIHHMMMHHHMMM:I:IHMM
-              :MHI:HHIHMMHHIIHII::.::IIHMMHHIHHMMM::HMM:
-               MI::HHMMIIM:IIHII::..::HM:MHHII:::IHHMM:
-               MMMHII::..:::IHMMHHHMHHMMI:::...::IHM:
-               :MHHI::....::::HMMMMMMHHI::.. ..:::HM:
-                :MI:.:MH:.....:HMMMMHHMIHMMHHI:HH.:M
-                M:.I..MHHHHHMMMIHMMMMHMMHHHHHMMH:.:M.
-                M:.H..H  I:HM:MHMHI:IM:I:MM::  MMM:M:
-                :M:HM:.M I:MHMIIMMIIHM I:MM::.:MMI:M.
-                'M::MM:IMH:MMII MMHIMHI :M::IIHMM:MM
-                 MH:HMMHIHMMMMMMHMMIMHIIHHHHIMMHHMM
-                  MI:MMMMHI:::::IMM:MHI:::IMMMMHIM
-                  :IMHIHMMMMMM:MMMMMHHHHMMMHI:M
-                    HI:IMIHMMMM:MMMMMMHHHMI:.:M      .....
-        ............M::..:HMMMMIMHIIHMMMMHII:M:::''''
-            ....:::MHI:.:HMMMMMMMMHHHMHHI::M:::::::''''''
-           ''   ...:MHI:.::MMHHHMHMIHMMMMHH.MI..........
-              ''  ...MHI::.::MHHHHIHHMM:::IHM           '''
-                 '  IMH.::..::HMMHMMMH::..:HM:
-                   :M:.H.IHMIIII::IIMHMMM:H.MH
-                    IMMMH:HI:MMIMI:IHI:HIMIHM:
-                  .MMI:.HIHMIMI:IHIHMMHIHI:MIM.
-                 .MHI:::HHIIIIIHHI:IIII::::M:IM.
-                .MMHII:::IHIII::::::IIIIIIHMHIIM
-                MHHHI::.:IHHII:::.:::IIIIHMHIIHM:
-               MHHHII::..::MII::.. ..:IIIHHHII:IM.
-              .MHHII::....:MHII::.  .:IHHHI::IIHMM.
-              MMHHII::.....:IHMI:. ..:IHII::..:HHMM
-              MHHII:::......:IIHI...:IHI::.....::HM:
-             :MMH:::........ ...::..::....  ...:IHMM
-             IMHIII:::..........     .........::IHMM.
-             :MHIII::::......          .......::IHMM:
-              MHHIII::::...             ......::IHMM:
-              IMHHIII:::...             .....::IIHMM,
-              :MHHIII:::I:::...     ....:::I:::IIHMM
-               MMHHIII::IHI:::...........:::IIH:IHMM
-               :MMHHII:IIHHI::::::.....:::::IH:IHMIM
-                MMMHHII:IIHHI:::::::::::::IHI:IIHM:M.
-                MMMHHIII::IHHII:::::::::IHI:IIIHMM:M:
-                :MMHHHIII::IIIHHII::::IHI..IIIHHM:MHM
-                :MMMHHII:..:::IHHMMHHHHI:IIIIHHMM:MIM
-                .MMMMHHII::.:IHHMM:::IIIIIIHHHMM:MI.M
-              .MMMMHHII::.:IHHMM:::IIIIIIHHHMM:MI.M
-            .MMMMHHMHHII:::IHHMM:::IIIIIHHHHMM:MI.IM.
-           .MMHMMMHHHII::::IHHMM::I&&&IHHHHMM:MMH::IM.
-          .MMHHMHMHHII:::.::IHMM::IIIIHHHMMMM:MMH::IHM
-          :MHIIIHMMHHHII:::IIHMM::IIIHHMMMMM::MMMMHHHMM.
-          MMHI:IIHMMHHHI::::IHMM:IIIIHHHMMMM:MMMHI::IHMM.
-          MMH:::IHMMHHHHI:::IHMM:IIIHHHHMMMM:MMHI:.:IHHMM.
-          :MHI:::IHMHMHHII::IHMM:IIIHHHMMMMM:MHH::.::IHHM:
-          'MHHI::IHMMHMHHII:IHMM:IIHHHHMMMM:MMHI:...:IHHMM.
-           :MHII:IIHMHIHHIIIIHMM:IIHHHHMMMM:MHHI:...:IIHMM:
-           'MHIII:IHHMIHHHIIHHHMM:IHHHMMMMM:MHHI:..::IIHHM:
-            :MHHIIIHHMIIHHHIHHHMM:HHHHMMMMM:MHII::::IIIHHMM
-             MHHIIIIHMMIHHHIIHHMM:HHHHMMMM:MMHHIIHIIIIIHHMM.
-             'MHHIIIHHMIIHHIIIHMM:HHHMMMMH:MHHMHII:IIIHHHMM:
-              'MHHIIIHMMIHHHIHHMM:HHHMMMHH:MMIMMMHHHIIIHHMM:
-               'MHHIIHHMIHHHHHMMM:HHHMMMH:MIMMMMMMMMMMHIHHM:
-                'MHIIIHMMIHHHHHMM:HHHMMMH:IMMMMMHHIHHHMMHHM'
-                 :MHHIIHMIHHHHHMM:HHHMMMM:MMHMMHIHMHI:IHHHM
-                  MHHIIHM:HHHHHMM:HHHMMMM:MMMHIHHIHMM:HHIHM
-                   MHHIHM:IHHHHMM:HHHHMM:MMHMIIHMIMMMHMHIM:
-                   :MHIHMH:HHHHMM:HHHHMM:MMHIIHMIIHHMMHIHM:
-                    MMHHMH:HHHHMM:HHHHMM:MHHIHMMIIIMMMIIHM'
-                    'MMMMH:HHHHMM:HHHMM:MHHHIMMHIIII::IHM:
-                     :MMHM:HHHHMM:HHHMM:MHIHIMMHHIIIIIHM:
-                      MMMM:HHHHMM:HHHHM:MHHMIMMMHHHIHHM:MMMM.
-                      :MMM:IHHHMM:HHHMM:MHHMIIMMMHHMM:MMMMMMM:
-                      :MMM:IHHHM:HHHHMM:MMHHHIHHMMM:MMMMMMMMMM
-                       MHM:IHHHM:HHHMMM:MMHHHHIIIMMIIMMMMMMMMM
-                       MHM:HHHHM:HHHMMM:HMMHHHHHHHHHMMMMMMMMM:
-                    .MI:MM:MHHMM:MHMMHMHHMMMMHHHHHHHMMMMMMMMM'
-                   :IM:MMIM:M:MM:MH:MM:MH:MMMMMHHHHHMMMMMMMM'
-                   :IM:M:IM:M:HM:IMIHM:IMI:MMMMMHHHMMMMMM:'
-                    'M:MHM:HM:MN:HMIHM::M'   '::MMMMMMM:'
-                       'M'HMM'M''M''HM'I'
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#" dir="ltr" itemscope itemtype="http://schema.org/website">
-<head>
-  <meta charset="utf-8" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="MobileOptimized" content="320" />
-  <meta name="theme-color" content="#74c7d5" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=device-dpi" />
-  <meta http-equiv="cleartype" content="on" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="content-script-type" content="text/javascript" />
-  <meta http-equiv="content-style-type" content="text/css" />
-  <meta http-equiv="content-language" content="us" />
+<html>
+	<head>
+		<title>Maria Rabelero - Web Developer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body id="top">
 
-  <title>Maria Rabelero | Page Not Found</title>
-  <meta name="description" content="Hi! Welcome to Maria Rabelero's site. I'm an IT & full stack developer." />
-  <meta name="keywords" content="Maria Rabelero,melonangie,Angie Rabelero,Rabelero,web developer,php developer,drupal,symfony,cv,resume,web,html,html5,css,css3,php,mysql,developer,development,gnu,linux,apache" />
-  <meta name="author" content="Maria Rabelero" />
-  <meta name="robots" content="index, follow, noodp" />
-  <meta name="revisit-after" content="14 days" />
-  <meta name="distribution" content="Global" />
-  <meta name="rating" content="General" />
-  <meta name="Resource-type" content="Website" />
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<img src="images/avatar.jpg" alt="" class="image"/>
+					<h1><strong>Hi,</strong></h1>
+					<h1><strong>I'm Maria Rabelero</strong></h1>
+					<h1>Full stack developer / <br />
+						Drupal developer /
+					</h1>
+				</div>
+			</header>
 
-  <!-- Microdata metas -->
-  <meta itemprop="name" content="Maria Rabelero - IT & Web Development for Smart People" />
-  <meta itemprop="description" content="Hi! Welcome to Maria Rabelero's site. I'm an IT & full stack developer." />
-  <meta itemprop="image" content="https://pbs.twimg.com/profile_images/1205738050/IMG012_bigger.JPG" />
+		<!-- Main -->
+			<div id="main">
 
-  <!-- Twitter metas -->
-  <meta property="twitter:account_id" content="136731560" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@melonangie" />
-  <meta name="twitter:creator" content="@melonangie" />
-  <meta name="twitter:description" content="Hi! Welcome to Maria Rabelero's site. I'm an IT & full stack developer." />
-  <meta name="twitter:title" content="Maria Rabelero - IT & Web Development for Smart People" />
-  <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/1205738050/IMG012_bigger.JPG" />
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2> </h2>
+							<p>I'm a full stack web developer based in Mexico.
+My skills are broad, from ux to design, front-end to back-end development, specialized in Drupal. I enjoy each aspect, and love building web apps from start to finish.</p>
+						</header>
+					</section>
 
-  <!-- Facebook metas -->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://mariarabelero.github.io" />
-  <meta property="og:title" content="Maria Rabelero - IT & Web Development for Smart People" />
-  <meta property="og:description" content="Hi! Welcome to Maria Rabelero's site. I'm an IT & full stack developer." />
-  <meta property="og:site_name" content="Maria Rabelero - IT & Web Development for Smart People" />
-  <meta property="og:image" content="https://pbs.twimg.com/profile_images/1205738050/IMG012_bigger.JPG" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+				<!-- Two -->
+					<section id="two">
+						<h2>Skills</h2>
+						<div class="row">
+							<article class="6u 12u$(xsmall) work-item">
+								<img src="images/thumbs/01.png" alt="" class="image fit thumb" />
+								<h3>Design & Development</h3>
+								<p>I design and code fantastic websites, stores, and mobile apps using cutting edge technologies.</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<img src="images/thumbs/02.png" alt="" class="image fit thumb" />
+								<h3>UX/UI Enhancement</h3>
+								<p>I help to find UX & UI bottlenecks and potential issues in interfaces and interactions to help your products and services to grow.</p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<img src="images/thumbs/03.png" alt="" class="image fit thumb" />
+								<h3>E-commerce Development</h3>
+								<p>Online shops and ecommerce solutions using Shopify platform & Drupal commerce.</p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<img src="images/thumbs/04.png" alt="" class="image fit thumb" />
+								<h3>From new site planning, installation, site building, theming, back-end development, to implementing in operation. Upgrades, maintenace... </p>
+							</article>
+						</div>
+						<!-- <ul class="actions">
+							<li><a href="#" class="button">Full Portfolio</a></li>
+						</ul> -->
+					</section>
 
-  <!-- Google metas -->
-  <meta name="google-site-verification" content="googlebee6a98eb3ccb40d.html" />
-  <link rel="author" href="https://www.google.com/profiles/106004297750760100468" />
-  <link rel="publisher" href="https://plus.google.com/106004297750760100468" />
-  <link rel="alternate" type="application/rss+xml" title="Maria Rabelero's Personal Site" href="https://mariarabelero.github.io/" />
-  <link rel="alternate" hreflang="en" href="https://mariarabelero.github.io/" />
+				<!-- Three -->
+					<section id="three">
+						<h2>Get In Touch</h2>
+						<!-- <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p> -->
+						<div class="row">
+							<div class="8u 12u$(small)">
+								<form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzuasJBgX59vJPS4bKiytJ9uRtznOZ6yz7SaFzCXg/exec" data-email="maria.rabelero@gmail.com">
+									<div class="row uniform 50%">
+										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+								</form>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</div>
+							<div class="4u$ 12u$(small)">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon fa-home">
+										<span class="label">Address</span></h3>
+										Tijuana, Baja California<br />
+										Mexico
+									</li>
+								<!-- 	<li>
+										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+										000-000-0000
+									</li> -->
+									<li>
+										<h3 class="icon fa-envelope-o">
+										<span class="label">Email</span></h3>
+										<a href="mailto:maria.rabelero@gmail.com">maria.rabelero@gmail.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
 
-  <!-- Other metas -->
-  <meta name="msvalidate.01" content="36F655E7FA1621D33A1B3B296B58A7D6" />
-  <meta property="fb:app_id" content="286181778509835"/>
-  <link rel="profile" href="https://gmpg.org/xfn/11" />
-  <link rel="shortlink" href="https://mariarabelero.github.io/" />
-  <link rel="canonical" href="https://mariarabelero.github.io/" />
-  <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/mariarabelero.github.io\/","name":"Maria Rabelero","potentialAction":{"@type":"SearchAction","target":"https:\/\/mariarabelero.github.io\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
-  <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Person","url":"https:\/\/mariarabelero.github.io\/","sameAs":["https:\/\/www.youtube.com\/c\/melonangie"],"@id":"#person","name":"Maria Rabelero"}</script>
+				<!-- Four -->
+				<!--
+					<section id="four">
+						<h2>Elements</h2>
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no" />
+						<section>
+							<h4>Text</h4>
+							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+							<hr />
+							<header>
+								<h4>Heading with a Subtitle</h4>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<header>
+								<h5>Heading with a Subtitle</h5>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<hr />
+							<h2>Heading Level 2</h2>
+							<h3>Heading Level 3</h3>
+							<h4>Heading Level 4</h4>
+							<h5>Heading Level 5</h5>
+							<h6>Heading Level 6</h6>
+							<hr />
+							<h5>Blockquote</h5>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+							<h5>Preformatted</h5>
+							<pre><code>i = 0;
 
-  <!-- Web Application Manifest -->
-  <link rel="manifest" href="manifest.json" />
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="application-name" content="Maria Rabelero">
-  <link rel="icon" type="image/png" href="apple-touch-icon.png" sizes="196x196" />
-  <link rel="icon" type="image/png" href="apple-touch-icon.png" sizes="96x96" />
-  <link rel="icon" type="image/png" href="apple-touch-icon.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="apple-touch-icon.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="apple-touch-icon.png" sizes="128x128" />
-  <link rel="shortcut icon" href="favicon.ico" sizes="16x16 32x32" />
-  <link rel="shortcut icon" href="apple-touch-icon.png" sizes="196x196" />
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+						</section>
 
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="Maria Rabelero" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" sizes="57x57" />
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" sizes="60x60" />
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" sizes="72x72" />
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" sizes="76x76" />
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" sizes="114x114"/>
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" sizes="120x120" />
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" sizes="152x152" />
-  <link rel="shortcut icon" href="apple-touch-icon.png" />
-  <!-- Place favicon.ico in the root directory -->
+						<section>
+							<h4>Lists</h4>
+							<div class="row">
+								<div class="6u 12u$(xsmall)">
+									<h5>Unordered</h5>
+									<ul>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+									<h5>Alternate</h5>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<h5>Ordered</h5>
+									<ol>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ol>
+									<h5>Icons</h5>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<h5>Actions</h5>
+							<ul class="actions">
+								<li><a href="#" class="button special">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions small">
+								<li><a href="#" class="button special small">Small</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<div class="row">
+								<div class="6u 12u$(small)">
+									<ul class="actions vertical">
+										<li><a href="#" class="button special">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+								<div class="6u$ 12u$(small)">
+									<ul class="actions vertical small">
+										<li><a href="#" class="button special small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+								</div>
+								<div class="6u 12u$(small)">
+									<ul class="actions vertical">
+										<li><a href="#" class="button special fit">Default</a></li>
+										<li><a href="#" class="button fit">Default</a></li>
+									</ul>
+								</div>
+								<div class="6u$ 12u$(small)">
+									<ul class="actions vertical small">
+										<li><a href="#" class="button special small fit">Small</a></li>
+										<li><a href="#" class="button small fit">Small</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
 
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="apple-touch-icon.png" />
-  <!-- <meta name="msapplication-TileColor" content="#74c7d5 /> -->
-  <meta name="msapplication-TileColor" content="#DBAD51" />
+						<section>
+							<h4>Table</h4>
+							<h5>Default</h5>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
 
-  <!-- Color the status bar on mobile devices -->
-  <!-- <meta name="theme-color" content="#74c7d5 /> -->
-  <meta name="theme-color" content="#DBAD51" />
+							<h5>Alternate</h5>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
 
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5-els.js"></script>
-  <![endif]-->
+						<section>
+							<h4>Buttons</h4>
+							<ul class="actions">
+								<li><a href="#" class="button special">Special</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button big">Big</a></li>
+								<li><a href="#" class="button">Default</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<ul class="actions fit">
+								<li><a href="#" class="button special fit">Fit</a></li>
+								<li><a href="#" class="button fit">Fit</a></li>
+							</ul>
+							<ul class="actions fit small">
+								<li><a href="#" class="button special fit small">Fit + Small</a></li>
+								<li><a href="#" class="button fit small">Fit + Small</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button special icon fa-download">Icon</a></li>
+								<li><a href="#" class="button icon fa-download">Icon</a></li>
+							</ul>
+							<ul class="actions">
+								<li><span class="button special disabled">Special</span></li>
+								<li><span class="button disabled">Default</span></li>
+							</ul>
+						</section>
 
-  <style>
+						<section>
+							<h4>Form</h4>
+							<form method="post" action="#">
+								<div class="row uniform 50%">
+									<div class="6u 12u$(xsmall)">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									</div>
+									<div class="6u$ 12u$(xsmall)">
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>
+									<div class="12u$">
+										<div class="select-wrapper">
+											<select name="demo-category" id="demo-category">
+												<option value="">- Category -</option>
+												<option value="1">Manufacturing</option>
+												<option value="1">Shipping</option>
+												<option value="1">Administration</option>
+												<option value="1">Human Resources</option>
+											</select>
+										</div>
+									</div>
+									<div class="4u 12u$(small)">
+										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+										<label for="demo-priority-low">Low Priority</label>
+									</div>
+									<div class="4u 12u$(small)">
+										<input type="radio" id="demo-priority-normal" name="demo-priority">
+										<label for="demo-priority-normal">Normal Priority</label>
+									</div>
+									<div class="4u$ 12u(small)">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high">High Priority</label>
+									</div>
+									<div class="6u 12u$(small)">
+										<input type="checkbox" id="demo-copy" name="demo-copy">
+										<label for="demo-copy">Email me a copy of this message</label>
+									</div>
+									<div class="6u$ 12u$(small)">
+										<input type="checkbox" id="demo-human" name="demo-human" checked>
+										<label for="demo-human">I am a human and not a robot</label>
+									</div>
+									<div class="12u$">
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="12u$">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="special" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
 
-    @font-face {
-      font-family: 'daniel';
-      src:
-        url('fonts/daniel.eot'),
-        url('fonts/daniel.woff2') format('woff2'),
-        url('fonts/daniel.woff') format('woff'),
-        url('fonts/daniel.ttf') format('truetype'),
-        url('fonts/daniel.svg#daniel') format('svg');
-      font-weight: normal;
-      font-style: normal;
-    }
+						<section>
+							<h4>Image</h4>
+							<h5>Fit</h5>
+							<div class="box alt">
+								<div class="row 50% uniform">
+									<div class="12u$"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="4u$"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
+									<div class="4u$"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="4u$"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							<h5>Left &amp; Right</h5>
+							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						</section>
 
-    /* @font-face {
-      font-family: 'a_little_sunshine';
-      src:
-        url('fonts/a_little_sunshine.eot'),
-        url('fonts/a_little_sunshine?#iefix') format('embedded-opentype'),
-        url('fonts/a_little_sunshine.woff2') format('woff2'),
-        url('fonts/a_little_sunshine.woff') format('woff'),
-        url('fonts/a_little_sunshine.ttf') format('truetype'),
-        url('fonts/a_little_sunshine.svg#a_little_sunshine') format('svg');
-      font-weight: normal;
-      font-style: normal;
-    }
+					</section>
+				-->
 
-    @font-face {
-      font-family: 'laneup';
-      src:
-        url('fonts/laneup.eot'),
-        url('fonts/laneup?#iefix') format('embedded-opentype'),
-        url('fonts/laneup.woff2') format('woff2'),
-        url('fonts/laneup.woff') format('woff'),
-        url('fonts/laneup.ttf') format('truetype'),
-        url('fonts/laneup.svg#laneup') format('svg');
-      font-weight: normal;
-      font-style: normal;
-    }*/
+			</div>
 
-    * {
-      line-height: 2;
-      margin: 0;
-    }
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://twitter.com/melonangie" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/Melonangie" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/mariarabelero/" class="icon fa-linkedin"><span class="label">Dribbble</span></a></li>
+						<li><a href="mailto:maria.rabelero@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
 
-    html {
-      display: table;
-      height: 100%;
-      width: 100%;
-    }
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="form-submission-handler.js" data-cfasync="false"></script>
 
-    body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
-      /*color: #fff;
-      font-family: 'laneup', sans-serif;
-      font-weight: 400;
-      background-color: #74c7d5;
-      background:
-        url('intro.svg') no-repeat center center fixed,
-        linear-gradient(45deg, rgba(195,237,244,1) 0%,rgba(116,199,213,1) 50%,rgba(187,227,237,1) 100%);*/
-      color: #DBAD51;
-      font-family: 'daniel', sans-serif;
-      font-weight: 600;
-      background-color: #fdfcf4;
-      background: url('bg.svg') no-repeat center center fixed;
-      background-size: cover;
-      -webkit-transition: opacity 1s ease;
-      -moz-transition: opacity 1s ease;
-      transition: opacity 1s ease;
-    }
-
-    section {
-      margin-top: 1.5em;
-      text-align: center;
-      /* text-shadow:
-        0 6px 1px rgba(0,0,0,.1),
-        0 0 5px rgba(0,0,0,.1),
-        0 1px 3px rgba(0,0,0,.3),
-        0 3px 5px rgba(0,0,0,.2),
-        0 5px 10px rgba(0,0,0,.25),
-        0 10px 10px rgba(0,0,0,.2),
-        0 20px 20px rgba(0,0,0,.15);*/
-    }
-
-    header {
-      position: absolute;
-      top: 0.5em;
-      left: 1em;
-    }
-
-    h1 {
-      /*font-family: 'a_little_sunshine', sans-serif;
-      font-weight: 600;*/
-      font-size: 2em;
-      display: inline-block;
-    }
-
-    h2 {
-      /*font-family: 'a_little_sunshine', sans-serif;
-      font-size: 1.8em;
-      font-weight: 600;*/
-      font-size: 1.5em;
-    }
-
-    p {
-      margin: 0 auto;
-      width: 260px;
-    }
-
-    img {
-      width:100%;
-    }
-
-    .logo-container {
-      display: inline-block;
-    }
-
-    .cat {
-      /*font-family: 'a_little_sunshine', sans-serif;
-      font-size: 5em;
-      font-weight: 600;*/
-      font-size: 2.5em;
-    }
-
-    @media only screen and (max-width: 330px) {
-
-      body, p {
-        width: 95%;
-      }
-
-      h1 {
-        font-size: 1.5em;
-      }
-
-      h2 {
-        font-size: 1.2em;
-        margin: 0 0 0.3em;
-      }
-
-      img {
-        display: none;
-      }
-
-      .cat {
-        font-size: 1em;
-      }
-
-    }
-
-    @keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-
-    @-moz-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-
-    @-webkit-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-
-    @-ms-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-
-    @-o-keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-
-    @-webkit-keyframes spin {
-      0% { -webkit-transform: rotateY(0deg);}
-      100% { -webkit-transform: rotateY(-360deg);}
-    }
-
-    @-moz-keyframes spin {
-      0% { -moz-transform: rotateY(0deg);}
-      100% { -moz-transform: rotateY(-360deg);}
-    }
-
-    #mmm {
-      -webkit-animation: fadein 1s;
-      -moz-animation: fadein 1s;
-      -ms-animation: fadein 1s;
-      -o-animation: fadein 1s;
-      animation: fadein 1s;
-    }
-
-    #oops {
-      -webkit-transform-style: preserves-3d;
-      -moz-transform-style: preserves-3d;
-      -webkit-animation-name: spin;
-      -webkit-animation-duration: 5s;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear;
-      -webkit-animation-delay: 2s;
-      -moz-animation-name: spin;
-      -moz-animation-duration: 5s;
-      -moz-animation-iteration-count: infinite;
-      -moz-animation-delay: 2s;
-    }
-
-    #oops:hover {
-      -webkit-animation-duration: 500ms;
-      -moz-animation-duration: 500ms;
-    }
-
-  </style>
-</head>
-<body id="mmm">
-  <header>
-    <h1>Maria Rabelero</h1>
-    <div class = 'logo-container'>
-      <img class="cat logo" src="apple-touch-icon.png" />
-    </div>
-  </header>
-  <section id="oops">
-    <div class="cat">~(=^–^)</div>
-    <h2>Oops...</h2>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
-  </section>
-
-  <!-- Noise generating function -->
-  <!-- <script>
-    function generateNoise(opacity) {
-
-      if ( !!!document.createElement('canvas').getContext ) {
-        return false;
-      }
-
-      var canvas = document.createElement("canvas"),
-      ctx = canvas.getContext('2d'),
-      x, y,
-      number,
-      opacity = opacity || .2;
-      canvas.width = 45;
-      canvas.height = 45;
-
-      for ( x = 0; x < canvas.width; x++ ) {
-        for ( y = 0; y < canvas.height; y++ ) {
-          number = Math.floor( Math.random() * 60 );
-          ctx.fillStyle = "rgba(" + number + "," + number + "," + number + "," + opacity + ")";
-          ctx.fillRect(x, y, 1, 1);
-        }
-      }
-
-      document.body.style.backgroundImage = "url(" + canvas.toDataURL("image/png") + ")";
-    }
-    generateNoise(.1);
-  </script> -->
-
-  <!-- Google Analytics -->
-  <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='//www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-58386721-1');ga('send','pageview');
-  </script>
-
-</body>
+	</body>
 </html>
