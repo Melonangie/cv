@@ -1,2 +1,2 @@
-# [mariarabelero CV](https://maria-rabelero.com)
+# [mariarabelero CV](https://maria-rabelero.pro)
 

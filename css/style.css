@@ -24,13 +24,13 @@
     1. 3rd Part CSS Libraries
 ====================================== */
 
-@import url("css/clear.css");
-@import url("css/sm-clean.css");
-@import url("css/owl.carousel.min.css");
-@import url("css/owl.theme.default.min.css");
-@import url("css/prettyPhoto.css");
-@import url("css/common.css");
-@import url("fonts/stylesheet.css");
+@import url("clear.css");
+@import url("sm-clean.css");
+@import url("owl.carousel.min.css");
+@import url("owl.theme.default.min.css");
+@import url("prettyPhoto.css");
+@import url("common.css");
+@import url("../fonts/stylesheet.css");
 
 
 /* ===================================
